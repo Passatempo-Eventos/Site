@@ -1,7 +1,7 @@
 # Passatempo Eventos 🌞 - Projeto Integrador Interdisciplinar (PII)
 Passatempo Eventos é um site desenvolvido por alunos do 1º ano do Instituto Mauá de Tecnologia (IMT) em parceria com a ONG Passatempo Educativo, que tem o objetivo de divulgar os  seus eventos e serviços oferecidos.
 
-## Participantes
+## Integrantes
 | Nome                | R.A.       | Github              |
 | ------------------- | ---------- | ------------------- |
 | Beatriz Diziró | 24.01818-0 | [@BeatrizzzD](https://github.com/BeatrizzzD) |
