@@ -34,6 +34,11 @@ nav ul > li {
     margin: 0px 30px;
 }
 
+nav ul > li:hover {
+    border-bottom: 2px solid var(--orange-01);
+    cursor: pointer;
+}
+
 nav div#botoes-nav {
     margin-left: auto;
     margin-right: 10px;
@@ -47,6 +52,13 @@ nav button#botao-doe {
     border: 2px solid var(--orange-01);
     border-radius: 10px;
     font-size: 15px;
+}
+
+nav button#botao-doe:hover {
+    background-color: var(--orange-01);
+    border: none;
+    color: var(--yellow-01);
+    transition: ease-in-out color .2s;
 }
 
 nav button#botao-entrar {
