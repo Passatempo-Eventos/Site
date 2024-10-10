@@ -18,6 +18,10 @@ nav {
     font-size: 15px;
 }
 
+nav {
+  font-size: 17px;
+}
+
 nav img#passatempo-logo {
     width: 75px;
     margin-left: 70px;
@@ -42,13 +46,13 @@ nav ul li > a:hover {
 
 nav div#botoes-nav {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 nav div a.botao-nav {
-    padding: 10px 25px;
+    padding: 5px 13px;
+    margin: 0px 7px;
     text-decoration: none;
-    font-size: 15px;
     border-radius: 10px;
 }
 
