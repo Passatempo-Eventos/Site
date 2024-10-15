@@ -72,6 +72,12 @@ nav div a#botao-entrar {
     border: 2px solid var(--orange-01);
 }
 
+nav div a#botao-entrar:hover {
+  background-color: var(--orange-02);
+  border-color: var(--orange-02);
+  transition: ease-in-out all .2s;
+}
+
 main div {
     width: 100%;
     height: 100vh;
