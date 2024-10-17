@@ -15,7 +15,7 @@ nav {
     align-items: center;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
     position: fixed;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -42,16 +42,19 @@ nav ul li > a:hover {
     cursor: pointer;
 }
 
-nav div#nav-direita{
+nav div#nav-direita {
     margin-left: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-    
+
 nav div#icones-redes {
     margin-right: 50px;
-    
+}
+
+nav div a#icone-instagram {
+    margin-right: 7px;
 }
 
 nav div#botoes-nav {
@@ -59,7 +62,7 @@ nav div#botoes-nav {
 }
 
 nav div a.botao-nav {
-    padding: 5px 13px;
+    padding: 7px 13px;
     margin: 0px 7px;
     text-decoration: none;
     border-radius: 10px;
@@ -84,9 +87,9 @@ nav div a#botao-entrar {
 }
 
 nav div a#botao-entrar:hover {
-  background-color: var(--orange-02);
-  border-color: var(--orange-02);
-  transition: ease-in-out all .2s;
+    background-color: var(--orange-02);
+    border-color: var(--orange-02);
+    transition: ease-in-out all .2s;
 }
 
 main div {
