@@ -42,8 +42,19 @@ nav ul li > a:hover {
     cursor: pointer;
 }
 
-nav div#botoes-nav {
+nav div#nav-direita{
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    
+nav div#icones-redes {
+    margin-right: 50px;
+    
+}
+
+nav div#botoes-nav {
     margin-right: 50px;
 }
 
