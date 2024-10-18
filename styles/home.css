@@ -20,9 +20,12 @@ nav {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-nav img#passatempo-logo {
-    width: 75px;
+nav a#passatempo-logo {
     margin-left: 70px;
+}
+
+nav a#passatempo-logo > img {
+    width: 75px;
 }
 
 nav ul#links-principal {
