@@ -3,7 +3,6 @@
 
 .font-family-ubuntu {
     font-family: "Ubuntu", sans-serif !important;
-    font-weight: 500 !important;
 }
 
 .bg-yellow-01 {
@@ -18,12 +17,20 @@
     background-color: var(--blue-01) !important;
 }
 
+.bg-white {
+    background-color: #fff !important;
+}
+
 .color-yellow-01 {
     color: var(--yellow-01) !important;
 }
 
 .color-orange-01 {
     color: var(--orange-01) !important;
+}
+
+.color-white {
+    color: #fff !important;
 }
 
 .border-color-yellow-01 {
@@ -33,3 +40,13 @@
 .border-color-orange-01 {
     border-color: var(--orange-01) !important;
 }
+
+.main {
+    padding-top: 100px;
+}
+
+.nav-menu {
+    width: 250px;
+    height: 250px;
+}
+
