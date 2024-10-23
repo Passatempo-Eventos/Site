@@ -1,10 +1,10 @@
-/* .login-container {
+.login-container {
     width: 60rem;
-    height: 35rem;
-} */
+    height: 30rem;
+}
 
 /* Media Queries */
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .login-container {
         width: 50rem;
         height: 30rem;
@@ -20,7 +20,7 @@
 
 @media (max-width: 768px) {
     .login-container {
-        width: 30rem;
+        width: 25rem;
         height: 30rem;
     }
-} */
+}
