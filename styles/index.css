@@ -41,12 +41,10 @@
     border-color: var(--orange-01) !important;
 }
 
-.main {
-    padding-top: 100px;
-}
-
 .nav-menu {
     width: 250px;
     height: 250px;
+    margin-top: 110px !important;
+    margin-left: 25px !important;
 }
 
