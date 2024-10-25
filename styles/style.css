@@ -76,8 +76,19 @@ main {
 }
 
 .login-container {
+    background-color: white !important;
     width: 60rem !important;
     height: 30rem !important;
+}
+
+.login-container div > h1 {
+    color: var(--orange-01) !important;
+    font-weight: 800 !important;
+}
+
+.botao-login {
+    background-color: var(--orange-01) !important;
+    color: white !important;
 }
 
 /* Media Queries */
