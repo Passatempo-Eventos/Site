@@ -2,50 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-/* Fontes */
-.font-family-ubuntu {
-    font-family: "Ubuntu", sans-serif !important;
-}
-
-.font-family-luckiest-guy {
-    font-family: "Luckiest Guy", cursive !important;
-}
-
-/* Cores */
-.bg-yellow-01 {
+header {
     background-color: var(--yellow-01) !important;
 }
 
-.bg-orange-01 {
-    background-color: var(--orange-01) !important;
+.passatempo-logo img {
+    width: 75px !important;
 }
 
-.bg-blue-01 {
-    background-color: var(--blue-01) !important;
-}
-
-.bg-white {
-    background-color: #fff !important;
-}
-
-.color-yellow-01 {
-    color: var(--yellow-01) !important;
-}
-
-.color-orange-01 {
+.nav-links li > a {
+    font-family: "Ubuntu", sans-serif !important;
+    font-weight: 500 !important;
     color: var(--orange-01) !important;
 }
 
-.color-white {
-    color: #fff !important;
+.botao-doe {
+    font-family: "Luckiest Guy", cursive !important;
+    font-weight: 500 !important;
+    color: var(--orange-01) !important;
+    border: 1px solid var(--orange-01) !important;
 }
 
-.border-color-yellow-01 {
-    border-color: var(--yellow-01) !important;
+.botao-entrar {
+    font-family: "Luckiest Guy", cursive !important;
+    font-weight: 500 !important;
+    background-color: var(--orange-01) !important;
+    color: var(--yellow-01) !important;
 }
 
-.border-color-orange-01 {
-    border-color: var(--orange-01) !important;
+main {
+    background-color: var(--blue-01) !important;
 }
 
 /* Navbar */
