@@ -32,25 +32,45 @@ header {
 
 main {
     background-color: var(--blue-01) !important;
+    margin-top: 94.45px !important;
 }
 
-/* Navbar */
-.nav-menu {
-    width: 15rem !important;
-    height: 14rem !important;
-    margin-top: 110px !important;
-    margin-left: 25px !important;
+.sidebar {
+    background-color: var(--yellow-01) !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    border-right: 1px solid var(--yellow-02) !important;
+    margin-left: -250px !important;
+    transition: all .3s !important;
 }
 
-/* Tela de login */
+.activate {
+    margin-left: 0px !important;
+}
+
+.sidebar-content {
+    height: 90vh !important;
+}
+
+.menu-item {
+    padding: 15px !important;
+    border-bottom: 1px solid var(--yellow-02) !important;
+}
+
+.menu-item.bottom {
+    background: var(--yellow-01);
+    width: 250px !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    border-top: 1px solid var(--yellow-02) !important;
+}
+
 .login-container {
     width: 60rem !important;
     height: 30rem !important;
 }
 
 /* Media Queries */
-@media (max-width: 1399.98px) {}
-
 @media (max-width: 1199.98px) {
     .login-container {
         width: 50rem !important;
@@ -59,10 +79,6 @@ main {
 }
 
 @media (max-width: 991.98px) {
-    .nav-menu {
-        height: 17rem !important;
-    }
-
     .login-container {
         width: 40rem !important;
         height: 30rem !important;
@@ -75,5 +91,3 @@ main {
         height: 30rem !important;
     }
 }
-
-@media (max-width: 575.98px) {}
