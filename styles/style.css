@@ -3,101 +3,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 header {
-    background-color: var(--yellow-01) !important;
+    background-color: var(--yellow-01);
+}
+
+.menu-btn {
+    background: none;
 }
 
 .passatempo-logo img {
-    width: 75px !important;
+    width: 75px;
 }
 
 .nav-links li > a {
-    font-family: "Ubuntu", sans-serif !important;
-    font-weight: 500 !important;
-    color: var(--orange-01) !important;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: var(--orange-01);
 }
 
 .botao-doe {
-    font-family: "Luckiest Guy", cursive !important;
-    font-weight: 500 !important;
-    color: var(--orange-01) !important;
-    border: 1px solid var(--orange-01) !important;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--orange-01);
+    border-radius: 5px;
+    color: var(--orange-01);
 }
 
 .botao-entrar {
-    font-family: "Luckiest Guy", cursive !important;
-    font-weight: 500 !important;
-    background-color: var(--orange-01) !important;
-    color: var(--yellow-01) !important;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--orange-01);
+    color: var(--yellow-01);
 }
 
 .overlay {
-    width: 100vw !important;
-    height: 100vh !important;
-    margin-top: 94.45px !important;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    top: 0 !important;
-    left: 0 !important;
-    position: absolute !important;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 94.45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 main {
-    background-color: var(--blue-01) !important;
-    margin-top: 94.45px !important;
+    background-color: var(--blue-01);
+    margin-top: 94.45px;
 }
 
 .sidebar {
-    background-color: var(--yellow-01) !important;
-    min-width: 250px !important;
-    max-width: 250px !important;
-    border-right: 1px solid var(--yellow-02) !important;
-    margin-left: -250px !important;
-    transition: all .3s !important;
+    background-color: var(--yellow-01);
+    min-width: 250px;
+    max-width: 250px;
+    border-right: 1px solid var(--yellow-02);
+    margin-left: -250px;
+    transition: all .3s;
 }
 
 .activate {
-    margin-left: 0px !important;
+    margin-left: 0px;
 }
 
 .sidebar-content {
-    height: 90vh !important;
+    height: 90vh;
 }
 
 .menu-item {
-    padding: 15px !important;
-    border-bottom: 1px solid var(--yellow-02) !important;
+    padding: 15px;
+    border-bottom: 1px solid var(--yellow-02);
 }
 
 .menu-item.bottom {
-    background: var(--yellow-01) !important;
-    width: 250px !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    border-top: 1px solid var(--yellow-02) !important;
+    background: var(--yellow-01);
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid var(--yellow-02);
 }
 
 .login-container {
-    width: 60rem !important;
-    height: 30rem !important;
+    background-color: white;
+    width: 60rem;
+    height: 30rem;
+}
+
+.login-container div > h1 {
+    color: var(--orange-01);
+    font-weight: 800;
+}
+
+.botao-login {
+    background-color: var(--orange-01);
+    color: white;
+    padding: 7px;
+    border: none;
 }
 
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
-        width: 50rem !important;
-        height: 30rem !important;
+        width: 50rem;
+        height: 30rem;
     }
 }
 
 @media (max-width: 991.98px) {
     .login-container {
-        width: 40rem !important;
-        height: 30rem !important;
+        width: 40rem;
+        height: 30rem;
     }
 }
 
 @media (max-width: 767.98px) {
     .login-container {
-        width: 25rem !important;
-        height: 30rem !important;
+        width: 25rem;
+        height: 30rem;
     }
 }
