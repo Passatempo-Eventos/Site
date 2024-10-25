@@ -11,7 +11,7 @@
         <header class="container-fluid position-fixed top-0 py-3 shadow-sm z-3"> 
             <nav class="row"> 
                 <div class="w-100 col-12 d-flex align-items-center">
-                    <button onclick="openMenu()" class="menu-btn btn d-xl-none ms-3 border-0" type="menu"><img src="images/icone-menu.svg" alt="Icone do menu" width="40"></button>
+                    <button onclick="toggleMenu()" class="menu-btn btn d-xl-none ms-3 border-0" type="menu"><img src="images/icone-menu.svg" alt="Icone do menu" width="40"></button>
                     <a class="passatempo-logo mx-xl-5 mx-auto" href="index.html"><img src="images/passatempo_logo.png" alt="Passatempo logo"></a> 
                     <ul class="nav-links list-unstyled d-xl-flex align-items-center d-none me-lg-auto mb-0">
                         <li class="pe-5"><a class="text-decoration-none" href="#">Quem somos</a></li>
@@ -28,6 +28,7 @@
                 </div>
             </nav>
         </header>
+        <div onclick="toggleMenu()" class="overlay d-none d-xl-none"></div>
         <main class="vh-100">
             <div class="vh-100 d-flex align-items-stretch d-xl-none">
                 <div class="sidebar position-fixed">
