@@ -112,6 +112,16 @@ main {
     height: 300vh;
 }
 
+.caixa{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.titulo{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    color: white;
+}
+
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
