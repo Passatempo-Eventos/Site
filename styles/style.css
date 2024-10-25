@@ -30,6 +30,16 @@ header {
     color: var(--yellow-01) !important;
 }
 
+.overlay {
+    width: 100vw !important;
+    height: 100vh !important;
+    margin-top: 94.45px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    top: 0 !important;
+    left: 0 !important;
+    position: absolute !important;
+}
+
 main {
     background-color: var(--blue-01) !important;
     margin-top: 94.45px !important;
@@ -58,7 +68,7 @@ main {
 }
 
 .menu-item.bottom {
-    background: var(--yellow-01);
+    background: var(--yellow-01) !important;
     width: 250px !important;
     position: absolute !important;
     bottom: 0 !important;
