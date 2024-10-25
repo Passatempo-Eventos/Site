@@ -104,6 +104,14 @@ main {
     border: none;
 }
 
+.background-eventos {
+    background-image: url("../images/background-01.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    height: 300vh;
+}
+
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
