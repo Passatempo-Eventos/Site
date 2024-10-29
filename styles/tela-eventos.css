@@ -3,7 +3,7 @@
     background-repeat: repeat-y;
     background-attachment: scroll; 
     background-size: cover;
-    height: 680vh;
+    height: 1230vh;
 }
 
 .resize-img{
@@ -20,6 +20,12 @@
     .resize-img{
         max-width: 60%;
         height: auto;
+    }
+}
+
+@media(min-width: 768px){
+    .imagem-fundo{
+        height: 590vh;
     }
 }
 
