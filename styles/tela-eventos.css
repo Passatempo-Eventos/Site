@@ -3,12 +3,17 @@
     background-repeat: repeat-y;
     background-attachment: scroll; 
     background-size: cover;
-    height: 300vh;
+    height: 680vh;
 }
 
 .resize-img{
     max-width: 85%;
     height: auto;
+}
+
+.subtitulo{
+    font-family: Ubuntu; 
+    color: white;
 }
 
 @media (min-width: 768px){
