@@ -3,7 +3,7 @@
     background-repeat: repeat-y;
     background-attachment: scroll; 
     background-size: cover;
-    height: 1230vh;
+    min-height: 100vh;
 }
 
 .resize-img{
@@ -23,11 +23,6 @@
     }
 }
 
-@media(min-width: 768px){
-    .imagem-fundo{
-        height: 590vh;
-    }
-}
 
 
 
