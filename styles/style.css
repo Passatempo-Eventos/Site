@@ -122,6 +122,22 @@ main {
     color: white;
 }
 
+.texto-padrao {
+    font-family: "Ubuntu", sans-serif;
+    font-size:large;
+    font-weight: 150;
+    color: white;
+    text-align: justify;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
@@ -143,3 +159,4 @@ main {
         height: 30rem;
     }
 }
+

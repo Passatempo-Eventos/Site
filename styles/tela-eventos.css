@@ -5,3 +5,18 @@
     background-size: cover;
     height: 300vh;
 }
+
+.resize-img{
+    max-width: 85%;
+    height: auto;
+}
+
+@media (min-width: 768px){
+    .resize-img{
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+
+
