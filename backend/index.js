@@ -22,7 +22,7 @@ const usuarioSchema = mongoose.Schema({
 })
 const Usuario = mongoose.model("Usuario", usuarioSchema)
 
-//
+// Método post para registrar(signup) usuários
 app.post("/signup", async (req, res) => {
     try {
         const email = req.body.email
@@ -36,6 +36,28 @@ app.post("/signup", async (req, res) => {
     } catch(e) {
         console.log(e)
         res.status(409).end()
+    }
+})
+
+app.post("/signin", async (req,res) => {
+    try {
+        const email = req.body.email
+        const senha = req.body.senha
+    
+        // verificar se email existe no banco
+        const emailExiste = await Usuario.findOne({email: email})
+        if (!emailExiste) {
+            res.status(401).json({msg: "Email inválido!"})
+        }
+        // caso o email exista
+        // verificar se a senha é valida
+        const senhaValida = await bcrypt.compare(senha, emailExiste.senha)
+        if (!senhaValida) {
+            res.status(401).json({msg: "Senha inválida!"})
+        }
+        res.status(200).end()
+    } catch(e) {
+        console.log(e)
     }
 })
 
