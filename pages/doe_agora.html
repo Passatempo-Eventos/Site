@@ -5,47 +5,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doe Agora</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-    <main class="vh-100 bg-blue-01 main">
-        <header class="container-fluid position-fixed top-0 py-3 shadow-sm z-3"> 
-            <nav class="row"> 
+    <main class=" bg-blue-01 main">
+        <header class="container-fluid position-fixed top-0 py-3 shadow-sm z-3">
+            <nav class="row">
                 <div class="w-100 col-12 d-flex align-items-center">
-                    <button onclick="toggleMenu()" class="menu-btn d-xl-none ms-3 border-0" type="menu"><img src="../images/icone-menu.svg" alt="Icone do menu" width="40"></button>
-                    <a class="passatempo-logo mx-xl-5 mx-auto" href="../index.html"><img src="../images/passatempo_logo.png" alt="Passatempo logo"></a> 
+                    <button onclick="toggleMenu()" class="menu-btn d-xl-none ms-3 border-0" type="menu"><img
+                            src="../images/icone-menu.svg" alt="Icone do menu" width="40"></button>
+                    <a class="passatempo-logo mx-xl-5 mx-auto" href="../index.html"><img
+                            src="../images/passatempo_logo.png" alt="Passatempo logo"></a>
                     <ul class="nav-links list-unstyled d-xl-flex align-items-center d-none me-lg-auto mb-0">
                         <li class="pe-5"><a class="text-decoration-none" href="#">Quem somos</a></li>
                         <li class="pe-5"><a class="text-decoration-none" href="#">Eventos</a></li>
                         <li class="pe-5"><a class="text-decoration-none" href="#">Oficinas</a></li>
                         <li class="pe-5"><a class="text-decoration-none" href="#">Saúde e Bem Estar</a></li>
                         <li><a class="text-decoration-none" href="#">Contatos</a></li>
-                    </ul> 
-                    <a class="d-none d-lg-flex" href="https://instagram.com" target="_blank"><img src="../images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a> 
-                    <a class="me-4 d-none d-lg-flex" href="https://facebook.com" target="_blank"><img src="../images/icone-facebook.svg" alt="Icone do Facebook" width="40" height="40"></a> 
-                    
+                    </ul>
+                    <a class="d-none d-lg-flex" href="https://instagram.com" target="_blank"><img
+                            src="../images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a>
+                    <a class="me-4 d-none d-lg-flex" href="https://facebook.com" target="_blank"><img
+                            src="../images/icone-facebook.svg" alt="Icone do Facebook" width="40" height="40"></a>
+
                     <a class="botao-entrar me-3 d-none d-md-flex" href="./login.html">Entrar</a>
-                    <a class="botao-doe" href="../pages/doe_agora.html">Doe agora</a> 
+                    <a class="botao-doe" href="../pages/doe_agora.html">Doe agora</a>
                 </div>
             </nav>
         </header>
         <div onclick="toggleMenu()" class="overlay d-none d-xl-none"></div>
-        <main class="vh-100">
+        <main>
             <div class="d-flex align-items-stretch d-xl-none">
                 <div class="sidebar position-fixed">
                     <div class="sidebar-content overflow-y-auto">
                         <ul class="nav-links list-unstyled">
                             <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Quem somos</a></li>
-                            <li class="menu-item"><a class="text-decoration-none fs-5" href="./eventos.html">Eventos</a></li>
+                            <li class="menu-item"><a class="text-decoration-none fs-5" href="./eventos.html">Eventos</a>
+                            </li>
                             <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Oficinas</a></li>
-                            <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Saúde e Bem Estar</a></li>
+                            <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Saúde e Bem Estar</a>
+                            </li>
                             <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Contatos</a></li>
-                        </ul> 
+                        </ul>
                         <div class="menu-item bottom">
                             <div class="d-flex justify-content-center">
-                                <a class="botao-entrar me-2" href="./login.html">Entrar</a>                
-                                <a class="botao-doe" href="#">Doe agora</a> 
+                                <a class="botao-entrar me-2" href="./login.html">Entrar</a>
+                                <a class="botao-doe" href="../pages/doe_agora.html">Doe agora</a>
                             </div>
                             <!--<div class="d-flex justify-content-end me-3">-->
                             <!--    <a href="https://instagram.com" target="_blank"><img src="images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a> -->
@@ -53,8 +61,43 @@
                             <!--</div>-->
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
+            
+            <div class="container-fluid background-doe_agora ">
+                <img src="../images/imagemDoacao.svg" alt="Foto em grupo Passatempo" class="d-md-none d-flex img-fluid w-100 h-auto p-0 m-0 ">
+                <div class="d-flex justify-content-center align-items-center pt-4">
+                    <div class="doe_agora-container p-4 shadow rounded-4">
+                        <div class="row">
+                            <div class="col-md-7 pb-0 p-4">
+                                <p class="doe_agora-font">Doações</p>
+                                <p>Você pode apoiar a Passatempo Educativo fazendo uma doação!</p>
+                                <p>Cada contribuição é investida diretamente em nossos programas, transformando seu apoio em ações concretas.</p>
+                                <p>Sua doação faz a diferença!</p>
+                                
+                                <p class="doe_agora-font">Transferência Bancária</p>
+                                <p>
+                                    Banco do Brasil<br>
+                                    Agência 4093-2<br>
+                                    Conta Corrente: 20.098-0<br>
+                                    CNPJ: 07.734.376/0001-79<br>
+                                    Razão Social: Passatempo Educativo
+                                </p>
+                            </div>
+                            <div class="col-md-5 d-flex flex-column top-0 pt-0 p-4 ">
+                                <img src="../images/imagemDoacao.svg" alt="Foto em grupo Passatempo" class="img-fluid rounded mb-4 d-none d-md-flex">
+                                <p class="doe_agora-font">Chave Pix</p>
+                                <p>
+                                    Chave PIX da Passatempo Educativo<br>
+                                    CNPJ: 07.734.376/0001-79<br>
+                                    Razão Social: Passatempo Educativo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            
         </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
