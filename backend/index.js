@@ -22,14 +22,14 @@ const usuarioSchema = mongoose.Schema({
 })
 const Usuario = mongoose.model("Usuario", usuarioSchema)
 
-// Método post para registrar(signup) usuários
+// Registrar usuários (sign up)
 app.post("/signup", async (req, res) => {
     try {
         const email = req.body.email
         const senha = req.body.senha
         const senhaCript = await bcrypt.hash(senha, 10)
         const usuario = new Usuario({email: email, senha: senhaCript})
-        const mongoRes = usuario.save()
+        const mongoRes = await usuario.save()
     
         console.log(mongoRes)
         res.status(201).end()
@@ -39,6 +39,7 @@ app.post("/signup", async (req, res) => {
     }
 })
 
+// Login (sign in)
 app.post("/signin", async (req,res) => {
     try {
         const email = req.body.email
