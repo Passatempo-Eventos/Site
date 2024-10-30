@@ -48,7 +48,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
 }
 
 main {
@@ -104,6 +104,15 @@ main {
     border: none;
 }
 
+.quemsomos-container{
+    padding: 50px 100px;
+}
+
+.quemsomos-conteudo{
+    color: #ffff;
+    font-family: "Ubuntu", sans-serif;
+}
+
 .background-eventos {
     background-image: url("../images/background-01.svg");
     background-repeat: repeat-y;
@@ -138,6 +147,24 @@ main {
     height: 100%;
 }
 
+.imagem-fundo{
+    background-image: url('../images/image.svg');
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.resize-img{
+    max-width: 85%;
+    height: auto;
+}
+
+.subtitulo{
+    font-family: Ubuntu; 
+    color: white;
+}
+
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
@@ -158,5 +185,9 @@ main {
         width: 25rem;
         height: 30rem;
     }
+   
+    .resize-img{
+        max-width: 60%;
+        height: auto;
+    }
 }
-
