@@ -104,14 +104,6 @@ main {
     border: none;
 }
 
-.background-eventos {
-    background-image: url("../images/background-01.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll; 
-    background-size: cover;
-    height: 300vh;
-}
-
 .quemsomos-container{
     padding: 50px 100px;
 }
@@ -121,6 +113,58 @@ main {
     font-family: "Ubuntu", sans-serif;
 }
 
+.background-eventos {
+    background-image: url("../images/background-01.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    height: 300vh;
+}
+
+.caixa{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.titulo{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    color: white;
+}
+
+.texto-padrao {
+    font-family: "Ubuntu", sans-serif;
+    font-size:large;
+    font-weight: 150;
+    color: white;
+    text-align: justify;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagem-fundo{
+    background-image: url('../images/image.svg');
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.resize-img{
+    max-width: 85%;
+    height: auto;
+}
+
+.subtitulo{
+    font-family: Ubuntu; 
+    color: white;
+}
+
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
@@ -128,7 +172,6 @@ main {
         height: 30rem;
     }
 }
-
 
 @media (max-width: 991.98px) {
     .login-container {
@@ -143,6 +186,8 @@ main {
         height: 30rem;
     }
    
+    .resize-img{
+        max-width: 60%;
+        height: auto;
+    }
 }
-
-
