@@ -86,6 +86,26 @@ main {
     border-top: 1px solid var(--yellow-02);
 }
 
+/* Homepage */
+.apresentacao-texto {
+    height: 400px;
+    background-color: red;
+}
+
+.apresentacao-carrosel {
+    height: 400px;
+    background-color: yellow;
+}
+
+.quemsomos-container{
+    padding: 50px 100px;
+}
+
+.quemsomos-conteudo{
+    color: #ffff;
+    font-family: "Ubuntu", sans-serif;
+}
+
 .login-container {
     background-color: white;
     width: 60rem;
@@ -102,15 +122,6 @@ main {
     color: white;
     padding: 7px;
     border: none;
-}
-
-.quemsomos-container{
-    padding: 50px 100px;
-}
-
-.quemsomos-conteudo{
-    color: #ffff;
-    font-family: "Ubuntu", sans-serif;
 }
 
 .background-eventos {
