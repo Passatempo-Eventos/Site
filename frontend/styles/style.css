@@ -89,12 +89,29 @@ main {
 /* Homepage */
 .apresentacao-texto {
     height: 400px;
-    background-color: red;
+    background-color: var(--blue-02);
+}
+
+.apresentacao-texto h1 {
+    font-family: "Luckiest Guy", cursive;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.apresentacao-texto a {
+    padding: 10px 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: var(--orange-01);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .apresentacao-carrosel {
     height: 400px;
-    background-color: yellow;
+    background-color: white;
 }
 
 .quemsomos-container{
