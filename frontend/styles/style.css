@@ -115,12 +115,23 @@ main {
 }
 
 .quemsomos-container{
-    padding: 50px 100px;
+    padding: 70px 100px;
 }
 
-.quemsomos-conteudo{
+.quemsomos-container h1, p {
     color: #ffff;
     font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.quemsomos-container a {
+    padding: 10px 20px;
+    font-family: "Luckiest Guy", recursive;
+    font-size: 15px;
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .login-container {
