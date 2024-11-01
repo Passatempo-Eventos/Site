@@ -146,7 +146,7 @@ main {
 }
 
 .oficinas-container div > a {
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-family: "Luckiest Guy", recursive;
     font-size: 15px;
     background-color: var(--yellow-01);
@@ -157,6 +157,32 @@ main {
 
 .oficinas-container div > img {
     max-height: 400px;
+    border-radius: 5px;
+}
+
+.saude-container {
+    background-color: var(--yellow-01);
+}
+
+.saude-container div > h1,
+.saude-container div > p {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--orange-01);
+}
+
+.saude-container div > a {
+    padding: 10px 30px;
+    font-family: "Luckiest Guy", recursive;
+    font-size: 15px;
+    background-color: var(--orange-01);
+    color: var(--yellow-01);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.saude-container div > img {
+    max-height: 400px;
+    border-radius: 5px;
 }
 
 .login-container {
