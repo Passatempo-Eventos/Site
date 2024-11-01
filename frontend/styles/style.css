@@ -278,6 +278,10 @@ main {
         width: 25rem;
         height: 30rem;
     }
+
+    .quemsomos-container{
+        padding: 50px;
+    }
    
     .resize-img{
         max-width: 60%;
