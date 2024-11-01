@@ -118,8 +118,9 @@ main {
     padding: 70px 100px;
 }
 
-.quemsomos-container h1, p {
-    color: #ffff;
+.quemsomos-container h1,
+.quemsomos-container p {
+    color: white;
     font-family: "Ubuntu", sans-serif;
     margin-bottom: 2rem;
 }
@@ -132,6 +133,30 @@ main {
     color: var(--orange-01);
     text-decoration: none;
     border-radius: 5px;
+}
+
+.oficinas-container {
+    background-color: var(--orange-01);
+}
+
+.oficinas-container div > h1,
+.oficinas-container div > p {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+.oficinas-container div > a {
+    padding: 10px 20px;
+    font-family: "Luckiest Guy", recursive;
+    font-size: 15px;
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.oficinas-container div > img {
+    max-height: 500px;
 }
 
 .login-container {
