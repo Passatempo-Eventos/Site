@@ -206,6 +206,16 @@ main {
     border: none;
 }
 
+.botao-enviar{
+    background-color: var(--orange-01);
+    color:white;
+    border: none;
+    font-family: Ubuntu;
+    font-weight: 400;
+    width: fit-content;
+    padding: 3px 10px;
+}
+
 .background-eventos {
     background-image: url("../images/background-01.svg");
     background-repeat: repeat-y;
@@ -214,8 +224,33 @@ main {
     height: 300vh;
 }
 
+.imagem-fundo{
+    background-image: url('../images/image.svg');
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.background-contatos{
+    background-image: url("../images/backgroud_contatos.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+
 .caixa{
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.caixa-branca{
+    background-color: white;
+    width: 85%;
+    height: 550px;
+    margin: 0 auto;
+    border-radius: 30px;
 }
 
 .titulo{
@@ -240,12 +275,30 @@ main {
     height: 100%;
 }
 
-.imagem-fundo{
-    background-image: url('../images/image.svg');
-    background-repeat: repeat-y;
-    background-attachment: scroll; 
-    background-size: cover;
-    min-height: 100vh;
+.input-box{
+    background-color: rgba(53, 53, 53, 0.15);
+    color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    width: 80%;
+    }
+
+.input-box::placeholder{
+    color: rgba(53, 53, 53, 0.5);
+    font-family: Ubuntu;
+    padding: 5%;
+}
+
+.input-box:focus{
+    border: 2px solid var(--blue-01) !important;
+}
+
+.mensagem{
+    height: 150px !important;
+    
 }
 
 .resize-img{
@@ -253,9 +306,27 @@ main {
     height: auto;
 }
 
+/* .logo-contatos{
+    max-width: 30%;
+    height: auto;
+    margin-right: 15%;
+} */
+
 .subtitulo{
     font-family: Ubuntu; 
     color: white;
+}
+
+.titulo-escuro{
+    font-family: Ubuntu;
+    color: var(--gray);
+    font-weight: bold;
+}
+
+.texto-escuro{
+    font-family: Ubuntu;
+    color: var(--gray); 
+    font-size: small;
 }
 
 /* Media Queries */
