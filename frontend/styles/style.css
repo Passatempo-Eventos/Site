@@ -335,10 +335,20 @@ main {
         width: 50rem;
         height: 30rem;
     }
+
+    .doe_agora-container {
+        width: 50rem;
+        height: 30rem;
+    }
 }
 
 @media (max-width: 991.98px) {
     .login-container {
+        width: 40rem;
+        height: 30rem;
+    }
+
+    .doe_agora-container {
         width: 40rem;
         height: 30rem;
     }
@@ -357,5 +367,10 @@ main {
     .resize-img{
         max-width: 60%;
         height: auto;
+    }
+
+    .doe_agora-container {
+        width: 25rem;
+        height: 40rem;
     }
 }
