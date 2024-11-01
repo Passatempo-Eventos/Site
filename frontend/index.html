@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <header class="container-fluid position-fixed top-0 py-3 shadow-sm z-3"> 
+        <header class="container-fluid position-fixed top-0 py-3 shadow-sm"> 
             <nav class="row"> 
                 <div class="w-100 col-12 d-flex align-items-center">
                     <button onclick="toggleMenu()" class="menu-btn d-xl-none ms-3 border-0" type="menu"><img src="images/icone-menu.svg" alt="Icone do menu" width="40"></button>
@@ -53,11 +53,67 @@
                     </div>
                 </div>    
             </div>
-            <div>
-                <div class="quemsomos-container">
-                        <h1 class="quemsomos-conteudo mb-4">QUEM SOMOS?</h1>
-                        <p class="quemsomos-conteudo">O Passatempo Eventos é uma iniciativa da ONG Passatempo Educativo, uma organização sem fins lucrativos dedicada a gerar impacto social por meio da  <strong>capacitação de jovens</strong>. Com o intuito de expandir as oportunidades para nossos formandos, criamos <strong>Passatempo Eventos, um espaço onde os trabalhos realizados pelos alunos são apresentados</strong>. Acreditamos que esses eventos não apenas destacam o talento e a criatividade dos jovens, mas também abrem portas para potenciais oportunidades de trabalho, conectando-os a profissionais e empresas do setor.</p>
+
+            <!--<div class="container-fluid">-->
+            <!--    <div class="row">-->
+            <!--        <div class="apresentacao-texto col-md-6 d-flex flex-column justify-content-center align-items-center text-center">-->
+            <!--            <h1 class="fs-5">Frase que faça sentido para o projeto</h1>-->
+            <!--            <a href="#">DOE AGORA</a>-->
+            <!--        </div>-->
+            <!--        <div class="apresentacao-carrosel col-md-6 d-flex justify-content-center align-items-center">-->
+            <!--            <h1 class="fs-5">FOTOS DO PROJETO (CARROSEL)</h1>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banners/aniversario_banner.png" class="d-block w-100" alt="Imagem do evento - Aniversário Temático">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banners/communityday_banner.png" class="d-block w-100" alt="Imagem do evento - Community Day">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banners/programacaoferias_banner.png" class="d-block w-100" alt="Imagem do evento - Programação Férias">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="quemsomos-container">
+                <h1 class="mb-4">QUEM SOMOS?</h1>
+                <p>O Passatempo Eventos é uma iniciativa da ONG Passatempo Educativo, uma organização sem fins lucrativos dedicada a gerar impacto social por meio da  <strong>capacitação de jovens</strong>. Com o intuito de expandir as oportunidades para nossos formandos, criamos <strong>Passatempo Eventos, um espaço onde os trabalhos realizados pelos alunos são apresentados</strong>. Acreditamos que esses eventos não apenas destacam o talento e a criatividade dos jovens, mas também abrem portas para potenciais oportunidades de trabalho, conectando-os a profissionais e empresas do setor.</p>
+                <a class="d-table" href="#">CONHEÇA NOSSOS EVENTOS</a>
+            </div>
+            <div class="container-fluid">
+                <div class="oficinas-container row justify-content-center align-items-center p-lg-5 py-5 px-2">
+                    <div class="col-lg-7 order-lg-first order-last">
+                        <h1 class="mb-5 text-xl-center">OFICINAS</h1>
+                        <p class="text-xl-center">Nossas oficinas oferecem um ambiente acolhedor e estimulante, repleto de materiais coloridos, para que as crianças se expressem livremente. Valorizamos a diversidade e incentivamos a experiência,  promovendo um aprendizado lúdico que apoia o desenvolvimento criativo e emocional de cada criança.</p>
+                        <a class="d-lg-table d-inline-block mt-lg-5 mt-3 mx-lg-auto" href="#">VER MAIS</a>    
+                    </div>
+                    <div class="col-lg-5 mb-lg-0 mb-5">
+                       <img class="img-fluid d-flex mx-auto" src="images/oficinas/nerf.jpeg" alt="Imagem do evento - Nerf"> 
+                    </div>
+                </div>    
+            </div>
+            <div class="container-fluid">
+                <div class="saude-container row justify-content-center align-items-center p-lg-5 py-5 px-2">
+                    <div class="col-lg-5 mb-lg-0 mb-5">
+                       <img class="img-fluid d-flex mx-auto" src="images/saude/clinicas_esportivas.jpg" alt="Imagem do evento - Clínicas Esportivas"> 
+                    </div>
+                    <div class="col-lg-7">
+                        <h1 class="mb-5 text-xl-center text-lg-end">SAÚDE E BEM ESTAR</h1>
+                        <p class="text-xl-center text-lg-end">Sabemos a importância do cuidado com a saúde e o bem-estar através da prática de atividades físicas, oferecendo diferentes modalidades e serviços que promovem um estilo de vida saudável.</p>
+                        <a class="d-lg-table d-inline-block mt-lg-5 mt-3 mx-lg-auto" href="#">VER MAIS</a>    
+                    </div>
+                </div>    
             </div>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
