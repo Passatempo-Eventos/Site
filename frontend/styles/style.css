@@ -206,6 +206,17 @@ main {
     border: none;
 }
 
+.botao-enviar{
+    background-color: var(--orange-01);
+    color:white;
+    border: none;
+    font-family: Ubuntu;
+    font-weight: 400;
+    width: fit-content;
+    padding: 5px 15px;
+    /* margin-right: 30%; */
+}
+
 .background-eventos {
     background-image: url("../images/background-01.svg");
     background-repeat: repeat-y;
@@ -214,8 +225,33 @@ main {
     height: 300vh;
 }
 
+.imagem-fundo{
+    background-image: url('../images/image.svg');
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.background-contatos{
+    background-image: url("../images/backgroud_contatos.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: 90vh;
+}
+
+
 .caixa{
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.caixa-branca{
+    background-color: white;
+    width: 80%;
+    height: 550px;
+    margin: 0 auto;
+    border-radius: 30px;
 }
 
 .titulo{
@@ -240,12 +276,37 @@ main {
     height: 100%;
 }
 
-.imagem-fundo{
-    background-image: url('../images/image.svg');
-    background-repeat: repeat-y;
-    background-attachment: scroll; 
-    background-size: cover;
-    min-height: 100vh;
+.altura-minima{
+    height: 35px;
+}
+
+.input-box{
+    background-color: rgba(53, 53, 53, 0.15);
+    color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    width: 95%;
+    }
+
+.input-checkbox{
+    cursor: pointer;
+}
+
+.input-box::placeholder{
+    color: rgba(53, 53, 53, 0.5);
+    font-family: Ubuntu;
+    padding: 2%;
+}
+
+.input-box:focus{
+    border: 2px solid var(--blue-01) !important;
+}
+
+.mensagem{
+    height: 150px !important;
+    
 }
 
 .resize-img{
@@ -253,32 +314,32 @@ main {
     height: auto;
 }
 
+.logo-contatos{
+    min-width: 75%;
+    height: auto;
+    padding-right: 25%;
+}
+
 .subtitulo{
     font-family: Ubuntu; 
     color: white;
 }
 
-/* Style Doe_Agora */
-.background-doe_agora {
-    background-image: url("../images/background-02.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll; 
-    background-size: cover;
-    min-height: 100vh;
-    padding: 0;
+.titulo-escuro{
+    font-family: Ubuntu;
+    color: var(--gray);
+    font-weight: bold;
 }
 
-.doe_agora-container {
-    background-color: white;
-    width: 60rem;
-    height: 30rem;
+.texto-escuro{
+    font-family: Ubuntu;
+    color: var(--gray); 
+    font-size: medium;
 }
-.doe_agora-container > p{
-    margin: 10px;
-}
-.doe_agora-font{
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 500;
+
+
+form.gap-form{
+    gap: 12px;
 }
 
 /* Media Queries */
@@ -304,6 +365,16 @@ main {
         width: 40rem;
         height: 30rem;
     }
+
+    .caixa-branca{
+        width: 20rem;
+        height: 40rem;
+    }
+
+    .background-contatos{
+        height: 45rem;
+        width: auto;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -324,5 +395,9 @@ main {
     .doe_agora-container {
         width: 25rem;
         height: 40rem;
+    }
+
+    .texto-escuro{
+        font-size: 90%;
     }
 }

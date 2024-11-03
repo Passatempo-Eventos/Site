@@ -61,61 +61,65 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid imagem-fundo">
-
-            <div class="row">
-                <h1 class="titulo text-center mt-5 mb-4">Oficinas</h1>
+        <div class="container-fluid pt-5 background-contatos">
 
 
-                <!-- primeira caixa -->
-                <div class="col-12 g-0 row py-1 mb-5 mt-3 caixa">
+            <div class="container-fluid p-4 caixa-branca">
+                <div class="row g-0 mt-3">
 
-                    <div
-                        class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center order-1 order-md-0 mt-3 mb-3">
-                        <img src="../images/oficinas/nerf.jpeg" class="img-fluid resize-img"
-                            alt="Crianças brincam com pistolas Nerf em uma área externa com obstáculos.">
+                    <div class="col-lg-7 d-flex flex-column ">
+                        <div class="text-center titulo-escuro mb-4">
+                            NOS ENVIE UMA MENSAGEM!
+                        </div>
+
+                        <form class="d-flex gap-form align-items-start flex-column ms-2">
+                            <input type="text" class="input-box  altura-minima" placeholder="Nome" required>
+                            <input type="email" class="input-box altura-minima" placeholder="E-mail" required>
+                            <input type="text" class="input-box altura-minima" placeholder="Cidade" required>
+                            <textarea class="input-box" placeholder="Mensagem" rows="5" required></textarea>
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" class="input-checkbox" required>
+                                <label class="ms-2">
+                                    <a href="../pdf/termos.pdf" target="_blank">
+                                        Termos e condições de uso.
+                                    </a>
+                                </label>
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="submit" class=" botao-enviar rounded ">Enviar</button>
+                            </div>
+                        </form>
                     </div>
 
-                    <div class="col-12 col-md-7 justify-content-center align-items-center order-2 order-md-1">
-                        <div class="content-wrapper mt-2 ms-5 me-5 ms-md-0">
-                            <h2 class="subtitulo">Batalha Nerf</h2>
-                            <p class=" texto-padrao mt-3 me-lg-4">Promover a diversão, o exercício físico, o trabalho em
-                                equipe, e o desenvolvimento de habilidades estratégicas e motoras, utilizando as
-                                pistolas Nerf em jogos organizados e seguros. Cenário de campo de batalha, equipamentos
-                                e regras de segurança.</p>
+                    <div class="col-lg-4">
+                        <img src="../images/passatempo_logo.png"
+                            class="img-fluid logo-contatos d-none d-lg-block"
+                            alt="Logo da ONG Passatempo Educativo: um sol com óculos escuros e boné.">
+
+                        <div class="">
+                            <div class="justify-content-center text-align-center titulo-escuro mt-5 mb-3">
+                                OUTRAS FORMAS DE CONTATO
+                            </div>
+
+                            <div class="texto-escuro">
+                                <li>Telefone:(11)99757-9540</li>
+                                <li>E-mail: passatempo@passatempoeducativo.org.br</li>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-                <!-- segunda caixa-->
-                <div class="col-12 g-0 row py-1 mb-5 mt-3 caixa">
-
-                    <div
-                        class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center order-1 order-md-0 mt-3 mb-3">
-                        <img src="../images/oficinas/bolhas_gigantes.jpeg" class="img-fluid resize-img"
-                            alt="Criança segura um bastão e sopra uma grande bolha de sabão.">
-                    </div>
-
-                    <div class="col-12 col-md-7 justify-content-center align-items-center order-2 order-md-1">
-                        <div class="content-wrapper mt-2 ms-5 me-5 ms-md-0">
-                            <h2 class="subtitulo">Bolhas Gigantes</h2>
-                            <p class=" texto-padrao mt-3 me-lg-4">Criar bolhas gigantes é uma atividade que encanta
-                                pessoas de todas as idades. A mistura perfeita de água, detergente e um toque de mágica
-                                transforma simples bolhas de sabão em verdadeiras obras de arte flutuantes. Imagine o
-                                brilho nos olhos das crianças ao verem bolhas enormes pairando no ar, refletindo as
-                                cores do arco-íris. É um momento de diversão e admiração que ficará gravado na memória
-                                de todos os participantes. Deixe a imaginação fluir e embarque nessa jornada de encanto
-                                e magia com a nossa oficina de bolhas gigantes.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="../scripts/frontend.js"></script>
+        </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="../scripts/frontend.js"></script>
 </body>
 
 </html>
