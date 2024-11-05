@@ -93,6 +93,10 @@ body {
     caret-color: transparent;
 }
 
+form {
+    caret-color: auto;
+}
+
 /* Homepage */
 .apresentacao-texto {
     height: 400px;
@@ -295,6 +299,7 @@ body {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     width: 95%;
+    padding: 8px;
     }
 
 .input-checkbox{
