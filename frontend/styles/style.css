@@ -313,7 +313,8 @@ form {
 }
 
 .input-box:focus{
-    border: 2px solid var(--orange-01) !important;
+    border: 2px solid var(--orange-01);  
+    outline: none;
 }
 
 .mensagem{
