@@ -89,6 +89,10 @@ main {
     border-top: 1px solid var(--yellow-02);
 }
 
+body {
+    caret-color: transparent;
+}
+
 /* Homepage */
 .apresentacao-texto {
     height: 400px;
