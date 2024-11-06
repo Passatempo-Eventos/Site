@@ -355,6 +355,23 @@ form.gap-form{
     gap: 12px;
 }
 
+.rodape{
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+    height: auto;
+    width: 100%;
+    font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-rodape{
+    max-width: 40%;
+    height: auto;
+    /* padding-left: 10%; */
+}
+
 .rodape-direitos{
     width: 100%;
     background-color: var(--orange-01);
@@ -363,6 +380,24 @@ form.gap-form{
     text-align: center;
     font-family: Ubuntu;
     color: var(--yellow-01);
+}
+
+.footer-col{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    color: var(--orange-01);
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 /* Media Queries */
