@@ -355,6 +355,16 @@ form.gap-form{
     gap: 12px;
 }
 
+.rodape-direitos{
+    width: 100%;
+    background-color: var(--orange-01);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-family: Ubuntu;
+    color: var(--yellow-01);
+}
+
 /* Media Queries */
 @media (max-width: 1199.98px) {
     .login-container {
