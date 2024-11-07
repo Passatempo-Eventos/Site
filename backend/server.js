@@ -4,6 +4,7 @@ const cors = require("cors")
 const mongoose = require("mongoose")
 const path = require("path")
 const usuarioRoutes = require("./routes/usuarioRoutes.js")
+const eventosRoutes = require("./routes/eventosRoutes.js")
 
 const PORT = process.env.PORT || 3000
 
@@ -12,11 +13,13 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
+app.use(express.static("../frontend/public"))
 
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "../frontend/views"))
 
 app.use("/", usuarioRoutes)
+app.use("/", eventosRoutes)
 
 // Função para criar conexão com o banco de dados (MongoDB)
 async function conectarMongo() {
