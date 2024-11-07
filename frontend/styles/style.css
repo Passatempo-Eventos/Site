@@ -343,9 +343,31 @@ main {
     font-size: medium;
 }
 
-
 form.gap-form{
     gap: 12px;
+}
+
+/* Style Doe_Agora */
+.background-doe_agora {
+    background-image: url("../images/background-02.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.doe_agora-container {
+    background-color: white;
+    width: 60rem;
+    height: 30rem;
+}
+.doe_agora-container > p{
+    margin: 10px;
+}
+.doe_agora-font{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
 }
 
 /* Media Queries */
