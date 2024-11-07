@@ -373,7 +373,7 @@ form.gap-form {
 }
 
 .logo-rodape {
-    max-width: 40%;
+    max-width: 35%;
     height: auto;
     padding: 0;
     margin-left: 30%;
@@ -410,8 +410,9 @@ form.gap-form {
     transition: all 0.3s ease;
 }
 
-
-
+.links-02{
+    margin-top: 45px;
+}
 
 /* Media Queries */
 @media (max-width: 1199.98px) {
@@ -468,7 +469,14 @@ form.gap-form {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    
+
+    .logo-rodape{
+        max-width: 70%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+
 }
 
 @media (max-width: 767.98px) {
