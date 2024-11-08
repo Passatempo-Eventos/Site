@@ -479,7 +479,9 @@ form.gap-form {
         margin-left: 30px;
         margin-top: 20px;
     }
-    
+    .footer-email{
+        word-break: break-all;
+    }
 }
 
 
@@ -523,4 +525,8 @@ form.gap-form {
         align-items: center;
         margin-top: 10px;
     }
+    .links h3{
+        margin-top: 5%;
+    }
+
 }
