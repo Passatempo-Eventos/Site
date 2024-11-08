@@ -410,7 +410,7 @@ form.gap-form {
     transition: all 0.3s ease;
 }
 
-.links-02{
+.links-02 {
     margin-top: 45px;
 }
 
@@ -431,7 +431,12 @@ form.gap-form {
         height: auto;
     }
 
+    .medias-sociais{
+        /* margin-left: 20px; */
+    }
 }
+
+
 
 
 @media (max-width: 991.98px) {
@@ -462,7 +467,6 @@ form.gap-form {
     .row-rodape {
         margin-bottom: 10px;
         padding: 0;
-        gap: 0 !important;
     }
 
     .footer-col {
@@ -470,14 +474,15 @@ form.gap-form {
         padding-right: 0 !important;
     }
 
-    .logo-rodape{
+    .logo-rodape {
         max-width: 70%;
-        margin-left: 20px;
+        margin-left: 30px;
         margin-top: 20px;
     }
-
-
+    
 }
+
+
 
 @media (max-width: 767.98px) {
     .login-container {
@@ -501,5 +506,21 @@ form.gap-form {
 
     .texto-escuro {
         font-size: 90%;
+    }
+
+    .footer-contatos {
+        margin-top: 10px;
+    }
+
+    .footer-col {
+        padding: 10px 40px !important;
+        width: 100%;
+    }
+
+    .medias-sociais a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
     }
 }
