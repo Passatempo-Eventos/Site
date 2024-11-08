@@ -228,13 +228,25 @@ form {
     background-color: var(--blue-01);
 }
 
-.background-eventos {
+/* .background-eventos {
     background-image: url("../images/background-01.svg");
     background-repeat: repeat-y;
     background-attachment: scroll;
     background-size: cover;
     height: 300vh;
+} */
+
+.background-eventos {
+    background-image: url('../images/image.svg');
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 315vh;
+    
+
+    
 }
+
 
 .imagem-fundo {
     background-image: url('../images/image.svg');
@@ -256,6 +268,8 @@ form {
 .caixa {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+
 
 .caixa-branca {
     background-color: white;
@@ -355,64 +369,6 @@ form.gap-form {
     gap: 12px;
 }
 
-.rodape {
-    background-color: var(--yellow-01);
-    color: var(--orange-01);
-    height: auto;
-    width: 100%;
-    font-family: Ubuntu;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.row-rodape {
-    align-items: center;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.logo-rodape {
-    max-width: 35%;
-    height: auto;
-    padding: 0;
-    margin-left: 30%;
-}
-
-.rodape-direitos {
-    width: 100%;
-    background-color: var(--orange-01);
-    padding: 10px;
-    margin: 0px;
-    text-align: center;
-    font-family: Ubuntu;
-    color: var(--yellow-01);
-}
-
-.footer-col {
-    padding-top: 20px;
-}
-
-.links ul li a:hover {
-    padding-left: 10px;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer-col ul li a {
-    color: var(--orange-01);
-    text-decoration: none;
-    font-weight: 400;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.links-02 {
-    margin-top: 45px;
-}
 
 /* Media Queries */
 @media (max-width: 1199.98px) {
@@ -430,14 +386,7 @@ form.gap-form {
         width: 90%;
         height: auto;
     }
-
-    .medias-sociais{
-        /* margin-left: 20px; */
-    }
 }
-
-
-
 
 @media (max-width: 991.98px) {
     .login-container {
@@ -453,34 +402,6 @@ form.gap-form {
     .background-contatos {
         height: 45rem;
         width: auto;
-    }
-
-    .footer-col ul {
-        font-size: 20px;
-        margin-bottom: 0;
-    }
-
-    .medias-sociais {
-        margin-bottom: 10px;
-    }
-
-    .row-rodape {
-        margin-bottom: 10px;
-        padding: 0;
-    }
-
-    .footer-col {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .logo-rodape {
-        max-width: 70%;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-    .footer-email{
-        word-break: break-all;
     }
 }
 
@@ -509,24 +430,4 @@ form.gap-form {
     .texto-escuro {
         font-size: 90%;
     }
-
-    .footer-contatos {
-        margin-top: 10px;
-    }
-
-    .footer-col {
-        padding: 10px 40px !important;
-        width: 100%;
-    }
-
-    .medias-sociais a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .links h3{
-        margin-top: 5%;
-    }
-
 }

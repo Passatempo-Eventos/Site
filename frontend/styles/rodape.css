@@ -1,0 +1,35 @@
+.caixa-laranja{
+    height: fit-content;
+    background-color: var(--orange-01);
+    padding: 5px;
+    text-align: center;
+    font-family: Ubuntu;
+    color: var(--yellow-01);
+}
+
+.caixa-amarela{
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+    font-family: "Ubuntu", sans-serif;   
+}
+
+.footer-logo{
+    height: 100px;
+}
+
+.caixa-amarela ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.caixa-amarela ul li a{
+    color: var(--orange-01);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.caixa-amarela ul li a:hover{
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
