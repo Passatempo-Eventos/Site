@@ -19,6 +19,10 @@
     height: 100px;
 }
 
+.footer-links{
+    margin-left: 5%;
+}
+
 .caixa-amarela ul{
     list-style: none;
     padding-left: 0;
