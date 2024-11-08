@@ -1,18 +1,18 @@
-
+.footer-container{
+    font-family: "Ubuntu", sans-serif
+}
 
 .caixa-laranja{
     height: fit-content;
     background-color: var(--orange-01);
     padding: 5px;
     text-align: center;
-    font-family: Ubuntu;
     color: var(--yellow-01);
 }
 
 .caixa-amarela{
     background-color: var(--yellow-01);
     color: var(--orange-01);
-    font-family: "Ubuntu", sans-serif;   
 }
 
 .footer-logo{
