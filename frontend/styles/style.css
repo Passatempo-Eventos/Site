@@ -241,11 +241,11 @@ form {
     background-repeat: repeat-y;
     background-attachment: scroll;
     background-size: cover;
+    width: 100vw;
     min-height: 315vh;
-    
-
-    
 }
+
+
 
 
 .imagem-fundo {
