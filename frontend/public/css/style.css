@@ -89,14 +89,6 @@ main {
     border-top: 1px solid var(--yellow-02);
 }
 
-body {
-    caret-color: transparent;
-}
-
-form {
-    caret-color: auto;
-}
-
 /* Homepage */
 .apresentacao-texto {
     height: 400px;
@@ -228,28 +220,8 @@ form {
     background-color: var(--blue-01);
 }
 
-/* .background-eventos {
-    background-image: url("../images/background-01.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 300vh;
-} */
-
-.background-eventos {
-    background-image: url('../images/image.svg');
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: cover;
-    width: 100vw;
-    min-height: 370vh;
-}
-
-
-
-
 .imagem-fundo {
-    background-image: url('../images/image.svg');
+    background-image: url("../images/backgrounds/background-01.svg");
     background-repeat: repeat-y;
     background-attachment: scroll;
     background-size: cover;
@@ -268,8 +240,6 @@ form {
 .caixa {
     background-color: rgba(0, 0, 0, 0.3);
 }
-
-
 
 .caixa-branca {
     background-color: white;
@@ -314,6 +284,7 @@ form {
     cursor: pointer;
     width: 95%;
     padding: 8px;
+    resize: none;
 }
 
 .input-checkbox {
@@ -364,11 +335,32 @@ form {
     font-size: medium;
 }
 
-
-form.gap-form {
+form.gap-form{
     gap: 12px;
 }
 
+/* Style Doe_Agora */
+.background-doe_agora {
+    background-image: url("../images/background-02.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll; 
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.doe_agora-container {
+    background-color: white;
+    width: 60rem;
+    height: 30rem;
+}
+.doe_agora-container > p{
+    margin: 10px;
+}
+.doe_agora-font{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+}
 
 /* Media Queries */
 @media (max-width: 1199.98px) {

@@ -7,7 +7,7 @@
     <title>Doe Agora</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -16,23 +16,22 @@
             <nav class="row">
                 <div class="w-100 col-12 d-flex align-items-center">
                     <button onclick="toggleMenu()" class="menu-btn d-xl-none ms-3 border-0" type="menu"><img
-                            src="../images/icone-menu.svg" alt="Icone do menu" width="40"></button>
+                            src="../public/images/icone-menu.svg" alt="Icone do menu" width="40"></button>
                     <a class="passatempo-logo mx-xl-5 mx-auto" href="../index.html"><img
-                            src="../images/passatempo_logo.png" alt="Passatempo logo"></a>
+                            src="../public/images/passatempo_logo.png" alt="Passatempo logo"></a>
                     <ul class="nav-links list-unstyled d-xl-flex align-items-center d-none me-lg-auto mb-0">
-                        <li class="pe-5"><a class="text-decoration-none" href="#">Quem somos</a></li>
-                        <li class="pe-5"><a class="text-decoration-none" href="#">Eventos</a></li>
-                        <li class="pe-5"><a class="text-decoration-none" href="#">Oficinas</a></li>
-                        <li class="pe-5"><a class="text-decoration-none" href="#">Saúde e Bem Estar</a></li>
-                        <li><a class="text-decoration-none" href="#">Contatos</a></li>
+                        <li class="pe-5"><a class="text-decoration-none" href="./eventos.html">Eventos</a></li>
+                        <li class="pe-5"><a class="text-decoration-none" href="./oficinas.html">Oficinas</a></li>
+                        <li class="pe-5"><a class="text-decoration-none" href="./saude.html">Saúde e Bem Estar</a></li>
+                        <li><a class="text-decoration-none" href="./contatos.html">Contatos</a></li>
                     </ul>
                     <a class="d-none d-lg-flex" href="https://instagram.com" target="_blank"><img
-                            src="../images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a>
+                            src="../public/images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a>
                     <a class="me-4 d-none d-lg-flex" href="https://facebook.com" target="_blank"><img
-                            src="../images/icone-facebook.svg" alt="Icone do Facebook" width="40" height="40"></a>
+                            src="../public/images/icone-facebook.svg" alt="Icone do Facebook" width="40" height="40"></a>
 
                     <a class="botao-entrar me-3 d-none d-md-flex" href="./login.html">Entrar</a>
-                    <a class="botao-doe" href="../pages/doe_agora.html">Doe agora</a>
+                    <a class="botao-doe" href="#">Doe agora</a>
                 </div>
             </nav>
         </header>
@@ -42,18 +41,17 @@
                 <div class="sidebar position-fixed">
                     <div class="sidebar-content overflow-y-auto">
                         <ul class="nav-links list-unstyled">
-                            <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Quem somos</a></li>
                             <li class="menu-item"><a class="text-decoration-none fs-5" href="./eventos.html">Eventos</a>
                             </li>
-                            <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Oficinas</a></li>
-                            <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Saúde e Bem Estar</a>
+                            <li class="menu-item"><a class="text-decoration-none fs-5" href="./oficinas.html">Oficinas</a></li>
+                            <li class="menu-item"><a class="text-decoration-none fs-5" href="./saude.html">Saúde e Bem Estar</a>
                             </li>
-                            <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Contatos</a></li>
+                            <li class="menu-item"><a class="text-decoration-none fs-5" href="./contatos.html">Contatos</a></li>
                         </ul>
                         <div class="menu-item bottom">
                             <div class="d-flex justify-content-center">
                                 <a class="botao-entrar me-2" href="./login.html">Entrar</a>
-                                <a class="botao-doe" href="../pages/doe_agora.html">Doe agora</a>
+                                <a class="botao-doe" href="#">Doe agora</a>
                             </div>
                             <!--<div class="d-flex justify-content-end me-3">-->
                             <!--    <a href="https://instagram.com" target="_blank"><img src="images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a> -->
@@ -65,8 +63,8 @@
             </div>
             
             <div class="container-fluid background-doe_agora ">
-                <img src="../images/imagemDoacaoBanner.png" alt="Foto em grupo Passatempo" class="d-md-none d-flex img-fluid w-100 h-auto p-0 m-0 ">
-                <div class="d-flex justify-content-center align-items-center pt-4">
+                <img src="../public/images/banners/imagemDoacaoBanner.png" alt="Foto em grupo Passatempo" class="d-md-none d-flex img-fluid w-100 h-auto p-0 m-0 ">
+                <div class="vh-100 d-flex justify-content-center align-items-center pt-4 ">
                     <div class="doe_agora-container p-4 shadow rounded-4">
                         <div class="row">
                             <div class="col-md-7 pb-0 p-4">
@@ -85,7 +83,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 d-flex flex-column top-0 pt-0 p-4 ">
-                                <img src="../images/imagemDoacao.svg" alt="Foto em grupo Passatempo" class="img-fluid rounded mb-4 d-none d-md-flex">
+                                <img src="../public/images/imagemDoacao.svg" alt="Foto em grupo Passatempo" class="img-fluid rounded mb-4 d-none d-md-flex">
                                 <p class="doe_agora-font">Chave Pix</p>
                                 <p>
                                     Chave PIX da Passatempo Educativo<br>
@@ -99,11 +97,21 @@
             </div>            
             
         </main>
+        <!-- Libras -->
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
-<script src="../scripts/frontend.js"></script>
-</body>
+<script src="../public/js/frontend.js"></script>
 
 </html>
