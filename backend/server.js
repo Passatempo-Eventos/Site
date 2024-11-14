@@ -5,6 +5,7 @@ const mongoose = require("mongoose")
 const path = require("path")
 const usuarioRoutes = require("./routes/usuarioRoutes.js")
 const eventosRoutes = require("./routes/eventosRoutes.js")
+const oficinasRoutes = require("./routes/oficinasRoutes.js")
 
 const PORT = process.env.PORT || 3000
 
@@ -20,6 +21,7 @@ app.set("views", path.join(__dirname, "../frontend/views"))
 
 app.use("/", usuarioRoutes)
 app.use("/", eventosRoutes)
+app.use("/", oficinasRoutes)
 
 // Função para criar conexão com o banco de dados (MongoDB)
 async function conectarMongo() {
