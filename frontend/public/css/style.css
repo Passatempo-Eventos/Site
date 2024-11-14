@@ -237,7 +237,7 @@ form {
 }
 
 .background-contatos {
-    background-image: url("../images/backgroud_contatos.svg");
+    background-image: url("../images/backgrounds/backgroud_contatos.svg");
     background-repeat: repeat-y;
     background-attachment: scroll;
     background-size: auto;
@@ -321,9 +321,8 @@ form {
 }
 
 .logo-contatos {
-    min-width: 75%;
+    max-width: 50%;
     height: auto;
-    padding-right: 25%;
 }
 
 .subtitulo {
