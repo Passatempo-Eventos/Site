@@ -1,0 +1,97 @@
+.footer-container{
+    font-family: "Ubuntu", sans-serif
+}
+
+.caixa-laranja{
+    height: fit-content;
+    background-color: var(--orange-01);
+    padding: 5px;
+    text-align: center;
+    color: var(--yellow-01);
+}
+
+.caixa-amarela{
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+}
+
+.footer-logo{
+    height: 100px;
+}
+
+.footer-links{
+    margin-left: 5%;
+}
+
+.caixa-amarela ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.caixa-amarela ul li a{
+    color: var(--orange-01);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.caixa-amarela ul li a:hover{
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 125px;
+}
+
+.footer-redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 991.98px) {
+    .footer-email{
+        word-break: break-all;
+    }
+}
+
+@media(min-width: 991.98px){
+    .footer-links ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .footer-redes-sociais{
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer-contatos{
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 576px){
+    .footer-grid{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width: 576px){
+    .footer-redes-sociais{
+        flex-direction: row;
+    }
+}
+
+

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passatempo Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="../public/images/logo_icon.ico">
+</head>
+
+<body>
+    <header class="container-fluid position-fixed top-0 py-3 shadow-sm z-3">
+        <nav class="row">
+            <div class="w-100 col-12 d-flex align-items-center">
+                <button onclick="toggleMenu()" class="menu-btn d-xl-none ms-3 border-0" type="menu"><img
+                        src="../public/images/icone-menu.svg" alt="Icone do menu" width="40"></button>
+                <a class="passatempo-logo mx-xl-5 mx-auto" href="../index.html"><img
+                        src="../public/images/passatempo_logo.png" alt="Passatempo logo"></a>
+                <ul class="nav-links list-unstyled d-xl-flex align-items-center d-none me-lg-auto mb-0">
+                    <li class="pe-5"><a class="text-decoration-none" href="./eventos.html">Eventos</a></li>
+                    <li class="pe-5"><a class="text-decoration-none" href="./oficinas.html">Oficinas</a></li>
+                    <li class="pe-5"><a class="text-decoration-none" href="#">Saúde e Bem Estar</a></li>
+                    <li><a class="text-decoration-none" href="./contatos.html">Contatos</a></li>
+                </ul>
+                <a class="d-none d-lg-flex" href="https://instagram.com" target="_blank"><img
+                        src="../public/images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a>
+                <a class="me-4 d-none d-lg-flex" href="https://facebook.com" target="_blank"><img
+                        src="../public/images/icone-facebook.svg" alt="Icone do Facebook" width="40" height="40"></a>
+
+                <a class="botao-entrar me-3 d-none d-md-flex" href="./login.html">Entrar</a>
+                <a class="botao-doe" href="./doe_agora.html">Doe agora</a>
+            </div>
+        </nav>
+    </header>
+    <div onclick="toggleMenu()" class="overlay d-none d-xl-none"></div>
+    <main>
+        <div class="d-flex align-items-stretch d-xl-none">
+            <div class="sidebar position-fixed">
+                <div class="sidebar-content overflow-y-auto">
+                    <ul class="nav-links list-unstyled">
+                        <li class="menu-item"><a class="text-decoration-none fs-5" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="menu-item"><a class="text-decoration-none fs-5" href="./oficinas.html">Oficinas</a>
+                        </li>
+                        <li class="menu-item"><a class="text-decoration-none fs-5" href="#">Saúde e Bem Estar</a>
+                        </li>
+                        <li class="menu-item"><a class="text-decoration-none fs-5" href="./contatos.html">Contatos</a>
+                        </li>
+                    </ul>
+                    <div class="menu-item bottom">
+                        <div class="d-flex justify-content-center">
+                            <a class="botao-entrar me-2" href="./login.html">Entrar</a>
+                            <a class="botao-doe" href="./doe_agora.html">Doe agora</a>
+                        </div>
+                        <!--<div class="d-flex justify-content-end me-3">-->
+                        <!--    <a href="https://instagram.com" target="_blank"><img src="../public/images/icone-instagram.svg" alt="Icone do Instagram" width="40" height="40"></a> -->
+                        <!--    <a href="https://facebook.com" target="_blank"><img src="../public/images/icone-facebook.svg" alt="Icone do Facebook" width="40" height="40"></a>     -->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid imagem-fundo">
+
+            <div class="row">
+                <h1 class="titulo text-center mt-5 mb-4">Saúde e Bem-estar</h1>
+                <div class="col-12 g-0 row py-1 mb-5 mt-3 caixa">
+                <!-- primeiro evento -->
+                    <div class="d-flex flex-md-row flex-column my-4">
+                        <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                            <img src="../public/images/saude/clinicas_esportivas.jpg" class="img-fluid resize-img"
+                                alt="Grupo de jovens jogando futebol em uma quadra coberta ao entardecer.">
+                        </div>
+
+                        <div class="col-12 col-md-7 justify-content-center align-items-center">
+                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5 ms-md-0">
+                                <h2 class="subtitulo">Clínicas Esportivas</h2>
+                                <p class=" texto-padrao mt-3 me-lg-4">Nossas Clínicas Esportivas são projetadas para
+                                    introduzir crianças ao mundo dos esportes de maneira divertida, segura e educativa. Com
+                                    foco no desenvolvimento físico, social e emocional, oferecemos uma ampla gama de
+                                    modalidades esportivas que estimulam o espírito de equipe, a disciplina, e o gosto pela
+                                    atividade física desde cedo. As atividades são conduzidas por profissionais qualificados
+                                    e utilizam métodos lúdicos para ensinar os fundamentos de diferentes esportes.
+                                </p>
+                                <p class=" texto-padrao mt-3 mb-0 me-lg-4">Futebol, Basquete, Vôlei, Ginástica, Circo, Capoeira,
+                                    Handebol, Takkyu Volley, Esgrima, Pilates, Funcional Kids e muito mais.</p>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <!-- segundo evento-->
+                    <div class="d-flex flex-md-row flex-column my-4">
+                        <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                            <img src="../public/images/saude/estacao_fitness.jpg" class="img-fluid resize-img"
+                                alt="Jovens reunidos num campo aberto, cercado de árvores e natureza, fazendo exercício de alongamento.">
+                        </div>
+
+                        <div class="col-12 col-md-7 justify-content-center align-items-center">
+                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5 ms-md-0">
+                                <h2 class="subtitulo">Estação Fitness</h2>
+                                <p class=" texto-padrao mt-3 me-lg-4">A Estação Fitness é um espaço completo para todas as
+                                    idades, dedicado ao exercício físico e ao bem-estar. Aqui, oferecemos uma variedade de
+                                    atividades para quem busca melhorar a saúde, a condição física e o bem-estar geral.
+                                    Nossas sessões incluem treinos personalizados, aulas em grupo e programas de
+                                    condicionamento físico que atendem às necessidades de iniciantes a atletas avançados.
+                                </p>
+                                <p class=" texto-padrao mt-3 mb-0 me-lg-4">Yoga, Pilates, Zumba, Funcional, Crossfit e muito
+                                    mais.</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../public/js/frontend.js"></script>
+</body>
+
+</html>
