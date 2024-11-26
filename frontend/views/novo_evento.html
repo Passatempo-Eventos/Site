@@ -1,0 +1,109 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Área do Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/novo_evento.css">
+</head>
+
+<body>
+    <div class="container-fluid background-adm">
+        <div class="sidebar">
+            <div class="user mt-4">
+                <img src="../public/images/passatempo_logo.png" alt="Foto do administrador" class="foto_perfil">
+            </div>
+            <div>
+                <button class="sair-button rounded-top">Sair</button>
+            </div>
+        </div>
+
+
+        <div class="screen-content">
+            <h1>Criar novo evento</h1>
+
+            <!--  caixa branca -->
+            <div>
+
+                <!-- primeira row: tipo e título -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="tipo" class="form-label">Tipo de evento:</label>
+                        <select name="tipo" id="tipo" class="form-select" required>
+                            <option value="">Escolha um tipo</option>
+                            <option value="1">Evento social</option>
+                            <option value="2">Evento corporativo</option>
+                            <option value="3">Oficinas</option>
+                            <option value="4">Saúde e bem-estar</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-7">
+                        <label for="titulo" class="form-label">Título do evento:</label>
+                        <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título do evento"
+                            required>
+                    </div>
+
+
+                    <!-- segunda row: img e descrição-img-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="imagem" class="form-label">Imagem:</label>
+                            <input type="file" class="form-control" id="imagem" name="imagem" accept="image/*">
+                            <div class="mt-3">
+                                <img id="preview" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <label for="descricao-img" class="form-label">Descrição da imagem:</label>
+                            <input type="text" id="descricao-img" name="descricao-img" class="form-control" placeholder="Descrição da imagem"
+                            required>
+                        </div>
+                    </div>
+
+                    <!-- terceira row:  descrição evento-->
+
+                    <div class="row">
+                        <label for="descricao" class="form-label">Descrição do evento:</label>
+                        <textarea class="form-label" id="descricao" name="descricao" placeholder="Descrição do evento" rows="5" required></textarea>
+                    </div>
+                </div>
+
+                <!-- caixa botoes -->
+                <div class="button mt-5">
+                    <button class="cancelar-button">Cancelar</button>
+                    <button class="add-button">Adicionar</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="../public/js/frontend.js"></script>
+
+        <script>
+            document.getElementById('imagem').addEventListener('change', function (event) {
+                const preview = document.getElementById('preview');
+                const file = event.target.files[0];
+
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        preview.src = e.target.result;
+                        preview.style.display = 'block';
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    preview.src = '';
+                    preview.style.display = 'none';
+                }
+            });
+        </script>
+</body>
+
+</html>

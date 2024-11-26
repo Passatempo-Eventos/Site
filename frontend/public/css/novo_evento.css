@@ -1,0 +1,62 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+.background-adm{
+    background-color: var(--gray-02);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: var(--blue-02);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.user {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+
+.sair-button {
+    background-color: var(--orange-02);
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center; 
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.sair-button:hover {
+    background-color: var(--blue-01);
+}
+
+.screen-content{
+    margin-left: 200px;
+    
+}
+
+
+
