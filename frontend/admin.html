@@ -142,7 +142,7 @@
                                     <td>jdiuhdihdibd</td>
                                     <td>jdiuhdihdibd</td>
                                     <td><a href="#" class="editar-link" data-bs-toggle="modal"
-                                            data-bs-target="#editarModal">Editar</a></td>
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
                                     <td><a href="#" class="excluir-link" data-bs-toggle="modal"
                                             data-bs-target="#deletarModal">Excluir</a></td>
                                 </tr>
@@ -152,7 +152,7 @@
                                     <td>jdiuhdihdibd</td>
                                     <td>jdiuhdihdibd</td>
                                     <td><a href="#" class="editar-link" data-bs-toggle="modal"
-                                            data-bs-target="#editarModal">Editar</a></td>
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
                                     <td><a href="#" class="excluir-link" data-bs-toggle="modal"
                                             data-bs-target="#deletarModal">Excluir</a></td>
                                 </tr>
@@ -162,7 +162,7 @@
                                     <td>jdiuhdihdibd</td>
                                     <td>jdiuhdihdibd</td>
                                     <td><a href="#" class="editar-link" data-bs-toggle="modal"
-                                            data-bs-target="#editarModal">Editar</a></td>
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
                                     <td><a href="#" class="excluir-link" data-bs-toggle="modal"
                                             data-bs-target="#deletarModal">Excluir</a></td>
                                 </tr>
@@ -172,7 +172,7 @@
                                     <td>jdiuhdihdibd</td>
                                     <td>jdiuhdihdibd</td>
                                     <td><a href="#" class="editar-link" data-bs-toggle="modal"
-                                            data-bs-target="#editarModal">Editar</a></td>
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
                                     <td><a href="#" class="excluir-link" data-bs-toggle="modal"
                                             data-bs-target="#deletarModal">Excluir</a></td>
                                 </tr>
@@ -182,10 +182,21 @@
                                     <td>jdiuhdihdibd</td>
                                     <td>jdiuhdihdibd</td>
                                     <td><a href="#" class="editar-link" data-bs-toggle="modal"
-                                            data-bs-target="#editarModal">Editar</a></td>
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
                                     <td><a href="#" class="excluir-link" data-bs-toggle="modal"
                                             data-bs-target="#deletarModal">Excluir</a></td>
-                                </tr>    
+                                </tr>
+                                <tr>
+                                    <td><img src="./public/images/eventos/aniversario_tematico.jpeg" width="100" alt="">
+                                    </td>
+                                    <td>jdiuhdihdibd</td>
+                                    <td>jdiuhdihdibd</td>
+                                    <td><a href="#" class="editar-link" data-bs-toggle="modal"
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
+                                    <td><a href="#" class="excluir-link" data-bs-toggle="modal"
+                                            data-bs-target="#deletarModal">Excluir</a></td>
+                                </tr>
+                                
                             </tbody>
                         </table>
                     </div> 
@@ -237,6 +248,48 @@
 							<div class="mb-3">
 								<label for="eventDescription" class="form-label">Descrição</label>
 								<textarea class="form-control" id="eventDescription" rows="3" placeholder="Descrição"></textarea>
+							</div>
+							
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- Modal de Edição de Saúde -->
+        <div class="modal fade " id="editarSaudeModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="editModalLabel">Editar Evento</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form> 
+							<!-- Título -->
+							<div class="mb-3">
+								<label for="eventTitle" class="form-label">Título</label>
+								<input type="text" class="form-control" id="eventTitle" placeholder="Nome do título">
+							</div>
+							<!-- Imagem -->
+							<div class="mb-3">
+								<label for="eventImage" class="form-label">Imagem</label>
+								<input type="file" class="form-control" id="eventImage">
+																
+							</div>
+							<!-- Descrição -->
+							<div class="mb-3">
+								<label for="eventDescription" class="form-label">Descrição</label>
+								<textarea class="form-control" id="eventDescription" rows="3" placeholder="Descrição"></textarea>
+							</div>
+							<!-- Exemplo -->
+							<div class="mb-3">
+								<label for="eventExample" class="form-label">Exemplo</label>
+								<textarea class="form-control" id="eventExample" rows="3" placeholder="Exemplo"></textarea>
 								
 							</div>
 						</form>
@@ -248,6 +301,7 @@
 				</div>
 			</div>
 		</div>
+
 
 		<!-- Modal de Excluir -->
 		<div class="modal fade" id="deletarModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
