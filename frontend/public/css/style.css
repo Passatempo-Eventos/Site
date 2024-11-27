@@ -15,10 +15,20 @@ header {
     width: 75px;
 }
 
-.nav-links li>a {
+.nav-links a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     color: var(--orange-01);
+}
+
+nav .nav-links a:hover,
+.link-border-bottom {
+    border-bottom: 2px solid var(--orange-01);
+}
+
+main .nav-links a > li:hover,
+.link-bg-color {
+    background: var(--black-hover);
 }
 
 .botao-doe {
