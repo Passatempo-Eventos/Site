@@ -82,8 +82,6 @@ main {
 .table {
     border-collapse: collapse; 
     border-spacing: 0;
-    width: 100%;
-
 }
     /* Arredonda as bordas superiores do cabeçalho da tabela */
 .table thead th:first-child {
