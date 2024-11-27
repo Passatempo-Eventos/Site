@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 #side-menu { /* Cor do menu lateral  */
-    background-color: var(--blue-admin-01) !important;
+    background-color: var(--blue-admin-01) ;
 }
 
 .fundo-cor {  
-    background-color: var(--cinza-admin-01) !important;
+    background-color: var(--cinza-admin-01) ;
 }
 
 h2,h3 { /* Configuração das fontes h2 e h3 */
@@ -15,18 +15,17 @@ h2,h3 { /* Configuração das fontes h2 e h3 */
 }
 
 h3 { /* Definindo a cor do h3 */
-    color: var(--orange-01) !important;
+    color: var(--orange-01) ;
 }
 
 h4 { 
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
-    padding-left: 0.6rem;
+    padding-left: 1.6rem;
     font-weight: bold;
 }
 
 p { 
-    padding-left: 0.6rem;
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -58,7 +57,7 @@ main {
 #criar-evento-button {
     font-family: "Luckiest Guy", recursive;
     color: var(--branco-button-01);
-    background-color: var(--blue-admin-01);
+    background-color: var(--blue-01);
     border: none;
     border-radius: 5px;
     display: flex;
@@ -75,7 +74,7 @@ main {
 }
 
 .tabelas {
-    margin: 0.6rem;
+    margin: 1.5rem;
     max-height: 300px;
     overflow-y: auto;
 }
