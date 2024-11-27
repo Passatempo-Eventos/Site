@@ -10,6 +10,16 @@
     padding: 0;
 }
 
+.caixa-branca {
+    background-color: white;
+    width: 90%;
+    height: 525px;
+    margin: 0 auto;
+    
+    border-radius: 30px;
+
+}
+
 .sidebar {
     width: 150px;
     background-color: var(--blue-02);
@@ -55,8 +65,49 @@
 
 .screen-content{
     margin-left: 200px;
+}
+
+.screen-content h1 {
+    padding-top: 5%;
+}
+
+.titulo{
+    font-family: "Luckiest Guy", cursive;
+    color: var(--orange-02)
+}
+
+.texto-simples{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.form-label{
+    margin-left: 5%;
+}
+
+.form-control {
+    background-color: rgba(53, 53, 53, 0.15);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    resize: none;
+    caret-color: auto;
+    margin-left: 5%;
     
 }
+
+
+
+.form-control::placeholder {
+    color: rgba(53, 53, 53, 0.5);
+}
+
+.form-control:focus {
+    background-color: rgba(53, 53, 53, 0.15);
+    border: 2px solid var(--orange-01);
+    outline: none;
+}
+
 
 
 
