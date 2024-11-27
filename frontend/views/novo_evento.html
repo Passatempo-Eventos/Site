@@ -25,7 +25,7 @@
 
             <!--  caixa branca -->
             <div class="container-fluid texto-simples caixa-branca mt-5">
-            
+
 
                 <!-- primeira row: tipo e título -->
                 <div class="row mt-4">
@@ -49,26 +49,29 @@
 
                     <!-- segunda row: img e descrição-img-->
                     <div class="row mt-4">
+
                         <div class="col-md-4">
-                            <label for="imagem" class="form-label">Imagem:</label>
-                            <input type="file" class="form-control" id="imagem" name="imagem" accept="image/*" required>
-                            <div class="mt-3">
-                                <img id="preview" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none">
+                            <label for="image-input" class="form-label">Imagem:</label>
+                            <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
+                                required>
+                            <div class="image-preview" id="imgPreview">
+                                <div class="icon">+</div>
+                                <img id="preview" alt="Pré-visualização da imagem">
                             </div>
                         </div>
 
                         <div class="col-md-7">
                             <label for="descricao-img" class="form-label">Descrição da imagem:</label>
-                            <input type="text" id="descricao-img" name="descricao-img" class="form-control" placeholder="Descrição da imagem"
-                            required>
+                            <input type="text" id="descricao-img" name="descricao-img" class="form-control"
+                                placeholder="Descrição da imagem" required>
                         </div>
                     </div>
 
                     <!-- terceira row:  descrição evento-->
-
                     <div class="row mt-4">
                         <label for="descricao" class="form-label">Descrição do evento:</label>
-                        <textarea class="form-control" id="descricao" name="descricao" placeholder="Descrição do evento" rows="5" required></textarea>
+                        <textarea class="form-control" id="descricao" name="descricao" placeholder="Descrição do evento"
+                            rows="5" required></textarea>
                     </div>
                 </div>
 
@@ -89,20 +92,33 @@
         <script src="../public/js/frontend.js"></script>
 
         <script>
-            document.getElementById('imagem').addEventListener('change', function (event) {
-                const preview = document.getElementById('preview');
-                const file = event.target.files[0];
 
+            const imageInput = document.getElementById('imagem');
+            const imagePreview = document.getElementById('imgPreview');
+            const previewImg = document.getElementById('preview');
+            const icon = imagePreview.querySelector('.icon');
+
+
+            imagePreview.addEventListener('click', () => {
+                imageInput.click();
+            });
+
+            imageInput.addEventListener('change', function (event) {
+                const file = event.target.files[0];
                 if (file) {
                     const reader = new FileReader();
+
                     reader.onload = function (e) {
-                        preview.src = e.target.result;
-                        preview.style.display = 'block';
+                        previewImg.src = e.target.result;
+                        previewImg.style.display = 'block';
+                        icon.style.display = 'none';
                     };
+
                     reader.readAsDataURL(file);
                 } else {
-                    preview.src = '';
-                    preview.style.display = 'none';
+                    previewImg.src = '';
+                    previewImg.style.display = 'none';
+                    icon.style.display = 'block';
                 }
             });
         </script>
