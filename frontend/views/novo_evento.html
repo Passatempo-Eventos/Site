@@ -33,18 +33,26 @@
 
 
         <div class="screen-content">
+           
             <h1 class="titulo">Criar novo evento</h1>
+
+            <!-- modal -->
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="alert fade d-none alert-modal-add" role="alert"></div>
+            </div>
+
 
             <!--  caixa branca -->
             <div class="container-fluid texto-simples caixa-branca mt-4">
 
+               
 
                 <!-- primeira row: tipo e título -->
                 <div class="row mt-4">
                     <div class="col-md-3 mt-5 ms-3 me-5">
                         <label for="tipo" class="form-label">Tipo de evento:</label>
                         <select name="tipo" id="tipo" class="form-control" required>
-                            <option value="">Escolha um tipo</option>
+                            <option value="" style="color: rgba(53, 53, 53, 0.5);">Escolha um tipo</option>
                             <option value="1">Evento social</option>
                             <option value="2">Evento corporativo</option>
                             <option value="3">Oficinas</option>
@@ -87,10 +95,26 @@
                     </div>
                 </div>
 
+                <!-- modal -->
+                <!-- modal e alert justos, cores não funcionam -->
+                <!-- <div class="modal alert fade alert-dismissible" role="alert" id="alertModal" aria-labelledby="alertModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body alert-modal-add">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+
+
                 <!-- caixa botoes -->
                 <div class="button mt-5 d-flex justify-content-center gap-5">
-                    <button class="cancelar-button">Cancelar</button>
-                    <button class="add-button">Adicionar</button>
+                    <button class="cancelar-button" id="cancelarButton">Cancelar</button>
+                    <button class="add-button" id="addButton">Adicionar</button>
                 </div>
 
 
@@ -103,7 +127,7 @@
             crossorigin="anonymous"></script>
         <script src="../public/js/frontend.js"></script>
         <script src="../public/js/novo-evento.js"></script>
-        
+
 </body>
 
 </html>

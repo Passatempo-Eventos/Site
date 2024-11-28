@@ -222,3 +222,11 @@ body{
 .foto-perfil{
     cursor: pointer;
 }
+
+.alert-modal-add {
+    width: 30%;
+    padding: 10px 20px; 
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 5px; 
+    text-align: center;   
+}

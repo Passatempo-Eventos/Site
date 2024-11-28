@@ -49,12 +49,12 @@ document.addEventListener('click', (event) => {
 
 
 //foto perfil
-const fotoInput = document.getElementById('foto-adm'); 
+const fotoInput = document.getElementById('foto-adm');
 const fotoPerfil = document.getElementById('fotoPerfil');
 const fotoButton = document.getElementById('fotoButton');
 
 fotoButton.addEventListener('click', () => {
-    fotoInput.click(); 
+    fotoInput.click();
 });
 
 fotoInput.addEventListener('change', function (event) {
@@ -64,7 +64,7 @@ fotoInput.addEventListener('change', function (event) {
         reader.onload = function (e) {
             fotoPerfil.src = e.target.result;
         };
-        reader.readAsDataURL(file); 
+        reader.readAsDataURL(file);
     } else {
         fotoPerfil.src = '../public/images/passatempo_logo.png';
     }
@@ -77,4 +77,89 @@ sairButton.addEventListener('click', function () {
     window.location.href = 'http://127.0.0.1:5500/Site/frontend/index.html'
 });
 
+//cancelar
+const cancelarButton = document.getElementById('cancelarButton');
+cancelarButton.addEventListener('click', function () {
+    window.location.href = '' //redirecionar para página principal do adm
+});
+
+//adicionar
+const addButton = document.getElementById('addButton');
+addButton.addEventListener('click', function () {
+    addEvento();
+});
+
+
+async function addEvento() {
+    let tipoInput = document.querySelector('#tipo');
+    let tituloInput = document.querySelector('#titulo');
+    let imgInput = document.querySelector('#imagem');
+    let imgDescricaoInput = document.querySelector('#descricao-img');
+    let descricaoInput = document.querySelector('#descricao');
+    let tipo = tipoInput.value;
+    let titulo = tituloInput.value;
+    let img = imgInput.value;
+    let imgDescricao = imgDescricaoInput.value;
+    let descricao = descricaoInput.value;
+
+    if (tipo && titulo && img && imgDescricao && descricao) {
+        try {
+            const addEndpoint = '/add-evento';
+            const URLcompleta = `${protocolo}${baseURL}${addEndpoint}`;
+
+            await axios.post(URLcompleta, {
+                tipo,
+                titulo,
+                img,
+                imgDescricao,
+                descricao,
+            });
+
+            tipoInput.value = '';
+            tituloInput.value = '';
+            imgInput.value = '';
+            imgDescricaoInput.value = '';
+            descricaoInput.value = '';
+
+            exibirAlerta('.alert-modal-add', 'Evento adicionado com sucesso!', ['show', 'alert-success'], ['d-none'], 2000);
+            exibirModal('#alertModal');
+            ocultarModal('#alertModal', 2000);
+
+
+        } catch (e) {
+            exibirAlerta('.alert-modal-add', 'Falha de conexão. Por favor, tente mais tarde.', ['show', 'alert-danger'], ['d-none'], 2000);
+            exibirModal('#alertModal');
+            ocultarModal('#alertModal', 2000);
+        }
+
+    } else {
+        exibirAlerta('.alert-modal-add', 'Preencha todos os campos.', ['show', 'alert-danger'], ['d-none'], 2000);
+        exibirModal('#alertModal');
+        ocultarModal('#alertModal', 2000);
+    }
+}
+
+
+function exibirAlerta(seletor, mensagem, classesToAdd, classesToRemove, timeout) {
+    const alerta = document.querySelector(seletor);
+    alerta.innerHTML = mensagem;
+    alerta.classList.add(...classesToAdd);
+    alerta.classList.remove(...classesToRemove);
+    setTimeout(() => {
+        alerta.classList.remove(...classesToAdd);
+        alerta.classList.add(...classesToRemove);
+    }, timeout);
+}
+
+function exibirModal(seletor) {
+    const modal = new bootstrap.Modal(document.querySelector(seletor));
+    modal.show();
+}
+
+function ocultarModal(seletor, timeout) {
+    setTimeout(() => {
+        let modal = bootstrap.Modal.getInstance(document.querySelector(seletor))
+        modal.hide()
+    }, timeout)
+}
 
