@@ -13,16 +13,6 @@ body{
     padding: 0;
 }
 
-.caixa-branca {
-    background-color: white;
-    width: 90%;
-    height: 525px;
-    margin: 0 auto;
-    
-    border-radius: 30px;
-
-}
-
 .sidebar {
     width: 150px;
     background-color: var(--blue-02);
@@ -34,18 +24,26 @@ body{
     position: fixed;
 }
 
-.user {
+.caixa-branca {
+    background-color: white;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;  
+    border-radius: 30px;
+}
+
+.adm {
     font-family: "Ubuntu", sans-serif;
     text-align: center;
     margin-top: 20px;
 }
 
-.user img {
+.adm img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid black;
+    border: 3px solid var(--blue-01);
 }
 
 
@@ -63,7 +61,8 @@ body{
 }
 
 .sair-button:hover {
-    background-color: var(--blue-01);
+    /* border: 4px solid var(--yellow-01);  */
+    color: var(--yellow-01)
 }
 
 .screen-content{
@@ -71,7 +70,7 @@ body{
 }
 
 .screen-content h1 {
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .titulo{
@@ -105,13 +104,13 @@ body{
 
 .form-control:focus {
     background-color: rgba(53, 53, 53, 0.15);
-    border: 2px solid var(--orange-01);
+    border: 2px solid var(--orange-02);
     outline: none;
 }
 
 .image-preview {
     width: 250px; 
-    height: 150px; 
+    height: 125px; 
     background-color: rgba(53, 53, 53, 0.15);
     display: flex;
     align-items: center;
@@ -143,10 +142,83 @@ body{
     color: var(--orange-02);
 }
 
-
-
 #image-input {
     display: none; 
 }
 
+.cancelar-button{
+    background-color: var(--orange-02);
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center; 
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
 
+.cancelar-button:hover{
+    /* border: 4px solid var(--yellow-01);  */
+    color: var(--yellow-01)
+}
+
+.add-button{
+    background-color: var(--blue-02);
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center; 
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.add-button:hover{
+    /* border: 4px solid var(--yellow-01);  */
+    color: var(--yellow-01)
+}
+
+
+/* a partir daqui */
+.adm-info {
+    display: none; 
+    position:absolute;
+    top:20px;
+    left:110%;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 3px solid var(--blue-02);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    
+}
+.adm-info p {
+    margin-top: 15px;
+}
+
+.foto-perfil-button {
+    background-color: var(--blue-02);
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center; 
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.foto-perfil-button:hover {
+    color: var(--yellow-01)
+}
+
+.foto-perfil{
+    cursor: pointer;
+}

@@ -1,3 +1,6 @@
+<!doctype html>
+<html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +14,18 @@
     <div class="container-fluid background-adm">
 
         <div class="sidebar">
-            <div class="user mt-4">
-                <img src="../public/images/passatempo_logo.png" alt="Foto do administrador" class="foto_perfil">
+            <div class="adm mt-4">
+                <img src="../public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
+                    id="fotoPerfil">
             </div>
+
+            <div class="adm-info texto-simples" id="admInfo">
+                <p class="adm-nome" style="font-size:x-large;">Nome do Admin</p>
+                <p class="adm-email">email@exemplo.com</p>
+                <button class="foto-perfil-button" id="fotoButton">Alterar Foto</button>
+                <input type="file" class="foto-adm d-none" id="foto-adm" name="foto-adm" accept="image/*">
+            </div>
+
             <div>
                 <button class="sair-button rounded-top">Sair</button>
             </div>
@@ -24,12 +36,12 @@
             <h1 class="titulo">Criar novo evento</h1>
 
             <!--  caixa branca -->
-            <div class="container-fluid texto-simples caixa-branca mt-5">
+            <div class="container-fluid texto-simples caixa-branca mt-4">
 
 
                 <!-- primeira row: tipo e título -->
                 <div class="row mt-4">
-                    <div class="col-md-4 mt-5">
+                    <div class="col-md-3 mt-5 ms-3 me-5">
                         <label for="tipo" class="form-label">Tipo de evento:</label>
                         <select name="tipo" id="tipo" class="form-control" required>
                             <option value="">Escolha um tipo</option>
@@ -40,7 +52,7 @@
                         </select>
                     </div>
 
-                    <div class="col-md-7 mt-5">
+                    <div class="col-md-7 mt-5 ms-5">
                         <label for="titulo" class="form-label">Título do evento:</label>
                         <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título do evento"
                             required>
@@ -50,7 +62,7 @@
                     <!-- segunda row: img e descrição-img-->
                     <div class="row mt-4">
 
-                        <div class="col-md-4">
+                        <div class="col-md-3 ms-3 me-5">
                             <label for="image-input" class="form-label">Imagem:</label>
                             <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
                                 required>
@@ -60,15 +72,15 @@
                             </div>
                         </div>
 
-                        <div class="col-md-7">
+                        <div class="col-md-7 ms-5">
                             <label for="descricao-img" class="form-label">Descrição da imagem:</label>
-                            <input type="text" id="descricao-img" name="descricao-img" class="form-control"
-                                placeholder="Descrição da imagem" required>
+                            <textarea class="form-control" id="descricao-img" name="descricao-img"
+                                placeholder="Descrição da imagem" rows="4" required></textarea>
                         </div>
                     </div>
 
                     <!-- terceira row:  descrição evento-->
-                    <div class="row mt-4">
+                    <div class="row mt-4 col-md-11 t">
                         <label for="descricao" class="form-label">Descrição do evento:</label>
                         <textarea class="form-control" id="descricao" name="descricao" placeholder="Descrição do evento"
                             rows="5" required></textarea>
@@ -76,52 +88,22 @@
                 </div>
 
                 <!-- caixa botoes -->
-                <div class="button mt-5">
+                <div class="button mt-5 d-flex justify-content-center gap-5">
                     <button class="cancelar-button">Cancelar</button>
                     <button class="add-button">Adicionar</button>
                 </div>
 
 
             </div>
-
         </div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
         <script src="../public/js/frontend.js"></script>
-
-        <script>
-
-            const imageInput = document.getElementById('imagem');
-            const imagePreview = document.getElementById('imgPreview');
-            const previewImg = document.getElementById('preview');
-            const icon = imagePreview.querySelector('.icon');
-
-
-            imagePreview.addEventListener('click', () => {
-                imageInput.click();
-            });
-
-            imageInput.addEventListener('change', function (event) {
-                const file = event.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-
-                    reader.onload = function (e) {
-                        previewImg.src = e.target.result;
-                        previewImg.style.display = 'block';
-                        icon.style.display = 'none';
-                    };
-
-                    reader.readAsDataURL(file);
-                } else {
-                    previewImg.src = '';
-                    previewImg.style.display = 'none';
-                    icon.style.display = 'block';
-                }
-            });
-        </script>
+        <script src="../public/js/novo-evento.js"></script>
+        
 </body>
 
 </html>
