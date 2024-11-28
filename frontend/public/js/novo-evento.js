@@ -121,6 +121,7 @@ async function addEvento() {
             imgDescricaoInput.value = '';
             descricaoInput.value = '';
 
+            //falta parte backend
             exibirAlerta('.alert-modal-add', 'Evento adicionado com sucesso!', ['show', 'alert-success'], ['d-none'], 2000);
             exibirModal('#alertModal');
             ocultarModal('#alertModal', 2000);
@@ -163,3 +164,24 @@ function ocultarModal(seletor, timeout) {
     }, timeout)
 }
 
+//campo exemplo p/ saude e bem estar
+document.addEventListener('DOMContentLoaded', () => {
+    const tipoSelect = document.getElementById('tipo');
+    const exemplo = document.getElementById('exemplo');
+    const savedTipo = localStorage.getItem('selectedTipo');
+    if (savedTipo) {
+        tipoSelect.value = savedTipo;
+        if (savedTipo === '4') {
+            exemplo.classList.remove('d-none');
+        }
+    }
+    tipoSelect.addEventListener('change', function () {
+        localStorage.setItem('selectedTipo', this.value);
+
+        if (this.value === '4') {
+            exemplo.classList.remove('d-none');
+        } else {
+            exemplo.classList.add('d-none'); 
+        }
+    });
+});
