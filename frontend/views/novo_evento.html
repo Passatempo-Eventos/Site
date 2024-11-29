@@ -33,7 +33,7 @@
 
 
         <div class="screen-content">
-           
+
             <h1 class="titulo">Criar novo evento</h1>
 
             <!-- modal -->
@@ -45,11 +45,9 @@
             <!--  caixa branca -->
             <div class="container-fluid texto-simples caixa-branca mt-4">
 
-               
-
                 <!-- primeira row: tipo e título -->
                 <div class="row mt-4">
-                    <div class="col-md-3 mt-5 ms-3 me-5">
+                    <div class="col-md-3 mt-5 ms-3 me-4">
                         <label for="tipo" class="form-label">Tipo de evento:</label>
                         <select name="tipo" id="tipo" class="form-control" required>
                             <option value="" style="color: rgba(53, 53, 53, 0.5);">Escolha um tipo</option>
@@ -60,65 +58,63 @@
                         </select>
                     </div>
 
-                    <div class="col-md-7 mt-5 ms-5">
+                    <div class="col-md-8 mt-5">
                         <label for="titulo" class="form-label">Título do evento:</label>
                         <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título do evento"
                             required>
                     </div>
-
-
-                    <!-- segunda row: img e descrição-img-->
-                    <div class="row mt-4">
-
-                        <div class="col-md-3 ms-3 me-5">
-                            <label for="image-input" class="form-label">Imagem:</label>
-                            <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
-                                required>
-                            <div class="image-preview" id="imgPreview">
-                                <div class="icon">+</div>
-                                <img id="preview" alt="Pré-visualização da imagem">
-                            </div>
-                        </div>
-
-                        <div class="col-md-7 ms-5">
-                            <label for="descricao-img" class="form-label">Descrição da imagem:</label>
-                            <textarea class="form-control" id="descricao-img" name="descricao-img"
-                                placeholder="Descrição da imagem" rows="4" required></textarea>
-                        </div>
-                    </div>
-
-                    <!-- terceira row:  descrição evento-->
-                    <div class="row mt-4 col-md-11 t">
-                        <label for="descricao" class="form-label">Descrição do evento:</label>
-                        <textarea class="form-control" id="descricao" name="descricao" placeholder="Descrição do evento"
-                            rows="5" required></textarea>
-                    </div>
-               
-                    <!-- quarta row: exemplos (só p/ opcão saude e bem-estar) -->
-                    <div class="row mt-4 col-md-11 d-none" id="exemplo" >
-                        <label for="exemplo" class="form-label">Exemplos (opcional):</label>
-                        <input type="text" id="exemplo" name="exemplo" class="form-control" placeholder="Escreva exemplos de atividades oferecidas nesse evento">
-                    </div>
-
                 </div>
-               
+
+                <!-- segunda row: img e descrição-img-->
+                <div class="row mt-4">
+
+                    <div class="col-md-3 ms-3 me-4">
+                        <label for="image-input" class="form-label">Imagem:</label>
+                        <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
+                            required>
+                        <div class="image-preview" id="imgPreview">
+                            <div class="icon">+</div>
+                            <img id="preview" alt="Pré-visualização da imagem">
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <label for="descricao-img" class="form-label">Descrição da imagem:</label>
+                        <textarea class="form-control" id="descricao-img" name="descricao-img"
+                            placeholder="Descrição da imagem" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <!-- terceira row:  descrição evento-->
+                <div class="row mt-4 col-md-12 ms-0 p-0">
+                    <label for="descricao" class="form-label ms-4 p-0">Descrição do evento:</label>
+                    <textarea class="form-control ms-4" id="descricao" name="descricao"
+                        placeholder="Descrição do evento" rows="5" required></textarea>
+                </div>
+
+                <!-- quarta row: exemplos (só p/ opcão saude e bem-estar) -->
+                <div class="row mt-4 col-md-12 d-none ms-0 p-0" id="exemplo">
+                    <label for="exemplo" class="form-label ms-4 p-0">Exemplos (opcional):</label>
+                    <input type="text" id="exemplo" name="exemplo" class="form-control ms-4"
+                        placeholder="Escreva exemplos de atividades oferecidas nesse evento">
+                </div>
 
                 <!-- caixa botoes -->
                 <div class="button mt-5 d-flex justify-content-center gap-5">
                     <button class="cancelar-button" id="cancelarButton">Cancelar</button>
                     <button class="add-button" id="addButton">Adicionar</button>
                 </div>
-
-
+                
             </div>
         </div>
+    </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script src="../public/js/frontend.js"></script>
-        <script src="../public/js/novo-evento.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../public/js/frontend.js"></script>
+    <script src="../public/js/novo-evento.js"></script>
 
 </body>
 
