@@ -16,14 +16,6 @@ body{
     padding: 0;
 }
 
-.background-contatos {
-    background-image: url("../images/backgrounds/backgroud_contatos.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: auto;
-    min-height: 90vh;
-}
-
 .sidebar {
     width: 150px;
     background-color: var(--blue-02);
@@ -68,7 +60,6 @@ body{
     cursor: pointer;
     align-self: center; 
     width: 100%;
-    transition: background-color 0.3s;
 }
 
 .sair-button:hover {
@@ -244,4 +235,40 @@ body{
     font-family: "Ubuntu", sans-serif;
     border-radius: 5px; 
     text-align: center;   
+}
+
+@media (max-width: 991.98px) {
+    .background-adm{
+        min-height: 150vh;
+    }
+
+    .sidebar{
+        width: 100px;
+    }
+
+    .adm img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .titulo{
+        margin-left: 50px;
+    }
+    
+    .caixa-branca{
+        min-height: 125vh;
+    }
+
+    .screen-content{
+        margin-left: 100px;
+    }
+
+    .screen-content h1 {
+        padding-top: 5%;
+    }
+
+    .form-label{
+        margin: 10px;
+    }
+    
 }
