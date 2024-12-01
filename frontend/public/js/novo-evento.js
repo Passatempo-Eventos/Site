@@ -30,7 +30,7 @@ imageInput.addEventListener('change', function (event) {
 });
 
 // pop-up info admin
-const imgPerfil = document.getElementById('fotoPerfil');
+const imgPerfil = document.getElementById('fotoPerfilSidebar');
 const admInfo = document.getElementById('admInfo');
 
 imgPerfil.addEventListener('click', () => {
@@ -48,25 +48,47 @@ document.addEventListener('click', (event) => {
 });
 
 
-//foto perfil
-const fotoInput = document.getElementById('foto-adm');
-const fotoPerfil = document.getElementById('fotoPerfil');
-const fotoButton = document.getElementById('fotoButton');
+//foto perfil sidebar
+const fotoInputSidebar = document.getElementById('fotoAdmSidebar');
+const fotoPerfilSidebar = document.getElementById('fotoPerfilSidebar');
+const fotoButtonSidebar = document.getElementById('fotoButtonSidebar');
 
-fotoButton.addEventListener('click', () => {
-    fotoInput.click();
+fotoButtonSidebar.addEventListener('click', () => {
+    fotoInputSidebar.click();
 });
 
-fotoInput.addEventListener('change', function (event) {
+fotoInputSidebar.addEventListener('change', function (event) {
     const file = event.target.files[0];
     if (file) {
         const reader = new FileReader();
         reader.onload = function (e) {
-            fotoPerfil.src = e.target.result;
+            fotoPerfilSidebar.src = e.target.result;
         };
         reader.readAsDataURL(file);
     } else {
-        fotoPerfil.src = '../public/images/passatempo_logo.png';
+        fotoPerfilSidebar.src = '../public/images/passatempo_logo.png';
+    }
+});
+
+//foto perfil navbar
+const fotoInputNavbar = document.getElementById('fotoAdmNavbar');
+const fotoPerfilNavbar = document.getElementById('fotoPerfilNavbar');
+const fotoButtonNavbar = document.getElementById('fotoButtonNavbar');
+
+fotoButtonNavbar.addEventListener('click', () => {
+    fotoInputNavbar.click();
+});
+
+fotoInputNavbar.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            fotoPerfilNavbar.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    } else {
+        fotoPerfilNavbar.src = '../public/images/passatempo_logo.png';
     }
 });
 
@@ -181,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (this.value === '4') {
             exemplo.classList.remove('d-none');
         } else {
-            exemplo.classList.add('d-none'); 
+            exemplo.classList.add('d-none');
         }
     });
 });

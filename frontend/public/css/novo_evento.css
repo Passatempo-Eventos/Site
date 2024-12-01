@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 
-body{
+body {
     caret-color: transparent;
 }
-.background-adm{
+
+.background-adm {
     background-color: var(--gray-02);
     background-repeat: repeat-y;
     background-attachment: scroll;
@@ -25,13 +26,31 @@ body{
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+
 }
+
+.navbar {
+    background-color: var(--blue-02);
+    color: rgb(0, 0, 0);
+
+}
+
+
+.navbar-toggler {
+    border: 2px solid var(--orange-02);
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 30 30"><path stroke="%23DC660A" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+
+}
+
 
 .caixa-branca {
     background-color: white;
     width: 90%;
     min-height: 95vh;
-    margin: 0 auto;  
+    margin: 0 auto;
     border-radius: 30px;
 }
 
@@ -58,15 +77,18 @@ body{
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    align-self: center; 
+    align-self: center;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+
 }
 
 .sair-button:hover {
     color: var(--yellow-01)
 }
 
-.screen-content{
+.screen-content {
     margin-left: 150px;
 }
 
@@ -74,18 +96,18 @@ body{
     padding-top: 3%;
 }
 
-.titulo{
+.titulo {
     font-family: "Luckiest Guy", cursive;
     color: var(--orange-02);
     margin-left: 80px;
-    
+
 }
 
-.texto-simples{
+.texto-simples {
     font-family: "Ubuntu", sans-serif;
 }
 
-.form-label{
+.form-label {
     margin-left: 5%;
 }
 
@@ -111,15 +133,15 @@ body{
 }
 
 .image-preview {
-    width: 250px; 
-    height: 125px; 
+    width: 250px;
+    height: 125px;
     background-color: rgba(53, 53, 53, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dashed #aaa; 
-    overflow: hidden; 
-    position: relative; 
+    border: 2px dashed #aaa;
+    overflow: hidden;
+    position: relative;
     cursor: pointer;
     margin-left: 5%;
 }
@@ -137,26 +159,28 @@ body{
 }
 
 .image-preview:hover {
-    border: 2px dashed var(--orange-02);   
+    border: 2px dashed var(--orange-02);
 }
 
-.image-preview:hover .icon{
+.image-preview:hover .icon {
     color: var(--orange-02);
 }
 
 #image-input {
-    display: none; 
+    display: none;
 }
 
-#descricao{
+#descricao {
     max-width: 1300px;
 }
 
-#exemplo{
+#exemplo {
     max-width: 1300px;
+
+    min-width: 300px;
 }
 
-.cancelar-button{
+.cancelar-button {
     background-color: var(--orange-02);
     color: white;
     font-family: "Luckiest Guy", cursive;
@@ -164,16 +188,16 @@ body{
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    align-self: center; 
+    align-self: center;
     transition: background-color 0.3s;
     border-radius: 10px;
 }
 
-.cancelar-button:hover{
+.cancelar-button:hover {
     color: var(--yellow-01)
 }
 
-.add-button{
+.add-button {
     background-color: var(--blue-02);
     color: white;
     font-family: "Luckiest Guy", cursive;
@@ -181,20 +205,20 @@ body{
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    align-self: center; 
+    align-self: center;
     transition: background-color 0.3s;
     border-radius: 10px;
 }
 
-.add-button:hover{
+.add-button:hover {
     color: var(--yellow-01)
 }
 
 .adm-info {
-    display: none; 
-    position:absolute;
-    top:20px;
-    left:110%;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 110%;
     width: 300px;
     height: 200px;
     background-color: white;
@@ -202,8 +226,9 @@ body{
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    
+
 }
+
 .adm-info p {
     margin-top: 15px;
 }
@@ -216,7 +241,7 @@ body{
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    align-self: center; 
+    align-self: center;
     transition: background-color 0.3s;
     border-radius: 10px;
 }
@@ -225,24 +250,24 @@ body{
     color: var(--yellow-01)
 }
 
-.foto-perfil{
+.foto-perfil {
     cursor: pointer;
 }
 
 .alert-modal-add {
     width: 30%;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     font-family: "Ubuntu", sans-serif;
-    border-radius: 5px; 
-    text-align: center;   
+    border-radius: 5px;
+    text-align: center;
 }
 
 @media (max-width: 991.98px) {
-    .background-adm{
-        min-height: 150vh;
+    .background-adm {
+        min-height: 190vh;
     }
 
-    .sidebar{
+    .sidebar {
         width: 100px;
     }
 
@@ -251,15 +276,15 @@ body{
         height: 70px;
     }
 
-    .titulo{
+    .titulo {
         margin-left: 50px;
     }
-    
-    .caixa-branca{
-        min-height: 125vh;
+
+    .caixa-branca {
+        min-height: 165vh;
     }
 
-    .screen-content{
+    .screen-content {
         margin-left: 100px;
     }
 
@@ -267,8 +292,29 @@ body{
         padding-top: 5%;
     }
 
-    .form-label{
+    .form-label {
         margin: 10px;
     }
-    
+
+}
+
+
+@media (max-width: 767.98px) {
+    .background-adm{
+        min-height: 200vh;
+    }
+    .sair-button {
+        width: 15%;
+        position: relative;
+    }
+
+    .foto-perfil-button {
+        background-color: var(--blue-01);
+    }
+    .screen-content {
+        margin-left: 0px;
+    }
+    .screen-content h1 {
+        padding-top: 15%;
+    }
 }

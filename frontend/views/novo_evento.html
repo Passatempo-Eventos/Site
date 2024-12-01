@@ -13,17 +13,18 @@
 <body>
     <div class="container-fluid background-adm">
 
-        <div class="sidebar">
+        <!-- sidebar -->
+        <div class="sidebar d-none d-md-block ">
             <div class="adm mt-4">
                 <img src="../public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
-                    id="fotoPerfil">
+                    id="fotoPerfilSidebar">
             </div>
 
             <div class="adm-info texto-simples" id="admInfo">
                 <p class="adm-nome" style="font-size:x-large;">Nome do Admin</p>
                 <p class="adm-email">email@exemplo.com</p>
-                <button class="foto-perfil-button" id="fotoButton">Alterar Foto</button>
-                <input type="file" class="foto-adm d-none" id="foto-adm" name="foto-adm" accept="image/*">
+                <button class="foto-perfil-button" id="fotoButtonSidebar">Alterar Foto</button>
+                <input type="file" class="foto-adm d-none" id="fotoAdmSidebar" name="foto-adm" accept="image/*">
             </div>
 
             <div>
@@ -31,6 +32,37 @@
             </div>
         </div>
 
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  d-block d-md-none fixed-top">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between w-100">
+
+                    <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <div class="adm mt-0">
+                                <img src="../public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
+                                    id="fotoPerfilNavbar">
+                            </div>
+                            <input type="file" class="foto-adm d-none" id="fotoAdmNavbar" name="foto-adm"
+                                accept="image/*">
+
+                            <p class="adm-nome mt-2" style="font-size:x-large;">Nome do Admin</p>
+                            <p class="adm-email">email@exemplo.com</p>
+                            <button class="foto-perfil-button" id="fotoButtonNavbar">Alterar Foto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="screen-content">
 
@@ -49,7 +81,7 @@
                 <div class="row mt-4">
                     <div class="col-lg-3 col-sm-11 mt-lg-5 mt-sm-3 ms-3 me-4 m-sm-0">
                         <label for="tipo" class="form-label ms-sm-4">Tipo de evento:</label>
-                        <select name="tipo" id="tipo" class="form-control" required>
+                        <select name="tipo" id="tipo" class="form-control ms-4" required>
                             <option value="" style="color: rgba(53, 53, 53, 0.5);">Escolha um tipo</option>
                             <option value="1">Evento social</option>
                             <option value="2">Evento corporativo</option>
@@ -58,10 +90,10 @@
                         </select>
                     </div>
 
-                    <div class="col-lg-8 col-sm-11 mt-lg-5 mt-sm-3">
-                        <label for="titulo" class="form-label ms-sm-4">Título do evento:</label>
-                        <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título do evento"
-                            required>
+                    <div class="col-lg-8 col-sm-11 mt-lg-5 mt-sm-3 ms-lg-5">
+                        <label for="titulo" class="form-label ms-sm-4 ms-lg-5">Título do evento:</label>
+                        <input type="text" id="titulo" name="titulo" class="form-control ms-4"
+                            placeholder="Título do evento" required>
                     </div>
                 </div>
 
@@ -80,7 +112,7 @@
 
                     <div class="col-sm-11 col-lg-8 mt-sm-3">
                         <label for="descricao-img" class="form-label ms-sm-4">Descrição da imagem:</label>
-                        <textarea class="form-control" id="descricao-img" name="descricao-img"
+                        <textarea class="form-control ms-4" id="descricao-img" name="descricao-img"
                             placeholder="Descrição da imagem" rows="4" required></textarea>
                     </div>
                 </div>
@@ -104,7 +136,7 @@
                     <button class="cancelar-button" id="cancelarButton">Cancelar</button>
                     <button class="add-button" id="addButton">Adicionar</button>
                 </div>
-                
+
             </div>
         </div>
     </div>
