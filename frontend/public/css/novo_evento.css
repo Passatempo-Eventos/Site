@@ -132,8 +132,16 @@ body {
     outline: none;
 }
 
+.form-control#tipo {
+    max-width: 90%;
+}
+
+.form-control#titulo {
+    max-width: 90%;
+}
+
 .image-preview {
-    width: 250px;
+    max-width: 90%;
     height: 125px;
     background-color: rgba(53, 53, 53, 0.15);
     display: flex;
@@ -170,14 +178,16 @@ body {
     display: none;
 }
 
+#descricao-img {
+    max-width: 90%;
+}
+
 #descricao {
-    max-width: 1300px;
+    max-width: 90%;
 }
 
 #exemplo {
-    max-width: 1300px;
-
-    min-width: 300px;
+    max-width: 95%;
 }
 
 .cancelar-button {
@@ -290,6 +300,10 @@ body {
 
     .form-label {
         margin: 10px;
+    }
+
+    .image-preview {
+        max-width: 50%;
     }
 
 }

@@ -79,9 +79,9 @@
 
                 <!-- primeira row: tipo e título -->
                 <div class="row mt-4">
-                    <div class="col-lg-3 col-sm-11 mt-lg-5 mt-sm-3 ms-3 me-4 m-sm-0">
+                    <div class="col-lg-3 col-sm-11 mt-lg-5 mt-3 ms-3 me-4 mx-sm-0">
                         <label for="tipo" class="form-label ms-sm-4">Tipo de evento:</label>
-                        <select name="tipo" id="tipo" class="form-control ms-4" required>
+                        <select name="tipo" id="tipo" class="form-control ms-2 ms-sm-4" required>
                             <option value="" style="color: rgba(53, 53, 53, 0.5);">Escolha um tipo</option>
                             <option value="1">Evento social</option>
                             <option value="2">Evento corporativo</option>
@@ -90,8 +90,8 @@
                         </select>
                     </div>
 
-                    <div class="col-lg-8 col-sm-11 mt-lg-5 mt-sm-3 ms-lg-5">
-                        <label for="titulo" class="form-label ms-sm-4 ms-lg-5">Título do evento:</label>
+                    <div class="col-lg-8 col-sm-11 mt-lg-5 mt-3 ms-lg-5">
+                        <label for="titulo" class="form-label ms-4">Título do evento:</label>
                         <input type="text" id="titulo" name="titulo" class="form-control ms-4"
                             placeholder="Título do evento" required>
                     </div>
@@ -104,14 +104,14 @@
                         <label for="image-input" class="form-label">Imagem:</label>
                         <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
                             required>
-                        <div class="image-preview ms-sm-3 " id="imgPreview">
+                        <div class="image-preview ms-2" id="imgPreview">
                             <div class="icon">+</div>
                             <img id="preview" alt="Pré-visualização da imagem">
                         </div>
                     </div>
 
                     <div class="col-sm-11 col-lg-8 mt-sm-3">
-                        <label for="descricao-img" class="form-label ms-sm-4">Descrição da imagem:</label>
+                        <label for="descricao-img" class="form-label ms-4">Descrição da imagem:</label>
                         <textarea class="form-control ms-4" id="descricao-img" name="descricao-img"
                             placeholder="Descrição da imagem" rows="4" required></textarea>
                     </div>
