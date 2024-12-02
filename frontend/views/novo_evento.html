@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Área do Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/novo_evento.css">
+</head>
+
+<body>
+    <div class="container-fluid background-adm">
+
+        <!-- sidebar -->
+        <div class="sidebar d-none d-md-block ">
+            <div class="adm mt-4">
+                <img src="../public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
+                    id="fotoPerfilSidebar">
+            </div>
+
+            <div class="adm-info texto-simples" id="admInfo">
+                <p class="adm-nome" style="font-size:x-large;">Nome do Admin</p>
+                <p class="adm-email">email@exemplo.com</p>
+                <button class="foto-perfil-button" id="fotoButtonSidebar">Alterar Foto</button>
+                <input type="file" class="foto-adm d-none" id="fotoAdmSidebar" name="foto-adm" accept="image/*">
+            </div>
+
+            <div>
+                <button class="sair-button rounded-top" id="sairButton">Sair</button>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  d-block d-md-none fixed-top">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between w-100">
+
+                    <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <div class="adm mt-0">
+                                <img src="../public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
+                                    id="fotoPerfilNavbar">
+                            </div>
+                            <input type="file" class="foto-adm d-none" id="fotoAdmNavbar" name="foto-adm"
+                                accept="image/*">
+
+                            <p class="adm-nome mt-2" style="font-size:x-large;">Nome do Admin</p>
+                            <p class="adm-email">email@exemplo.com</p>
+                            <button class="foto-perfil-button" id="fotoButtonNavbar">Alterar Foto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="screen-content">
+
+            <h1 class="titulo">Criar novo evento</h1>
+
+            <!-- modal -->
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="alert fade d-none alert-modal-add" role="alert"></div>
+            </div>
+
+
+            <!--  caixa branca -->
+            <div class="container-fluid texto-simples caixa-branca mt-4">
+
+                <!-- primeira row: tipo e título -->
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-sm-11 mt-lg-5 mt-3 ms-3 me-4 mx-sm-0">
+                        <label for="tipo" class="form-label ms-sm-4">Tipo de evento:</label>
+                        <select name="tipo" id="tipo" class="form-control ms-2 ms-sm-4" required>
+                            <option value="" style="color: rgba(53, 53, 53, 0.5);">Escolha um tipo</option>
+                            <option value="1">Evento social</option>
+                            <option value="2">Evento corporativo</option>
+                            <option value="3">Oficinas</option>
+                            <option value="4">Saúde e bem-estar</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-8 col-sm-11 mt-lg-5 mt-3 ms-lg-5">
+                        <label for="titulo" class="form-label ms-4">Título do evento:</label>
+                        <input type="text" id="titulo" name="titulo" class="form-control ms-4"
+                            placeholder="Título do evento" required>
+                    </div>
+                </div>
+
+                <!-- segunda row: img e descrição-img-->
+                <div class="row mt-4">
+
+                    <div class="col-sm-11 col-lg-3 ms-3 me-4">
+                        <label for="image-input" class="form-label">Imagem:</label>
+                        <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
+                            required>
+                        <div class="image-preview ms-2" id="imgPreview">
+                            <div class="icon">+</div>
+                            <img id="preview" alt="Pré-visualização da imagem">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-11 col-lg-8 mt-sm-3">
+                        <label for="descricao-img" class="form-label ms-4">Descrição da imagem:</label>
+                        <textarea class="form-control ms-4" id="descricao-img" name="descricao-img"
+                            placeholder="Descrição da imagem" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <!-- terceira row:  descrição evento-->
+                <div class="row mt-4 col-sm-11 col-lg-12 ms-0 p-0">
+                    <label for="descricao" class="form-label ms-4 p-0">Descrição do evento:</label>
+                    <textarea class="form-control ms-4" id="descricao" name="descricao"
+                        placeholder="Descrição do evento" rows="5" required></textarea>
+                </div>
+
+                <!-- quarta row: exemplos (só p/ opcão saude e bem-estar) -->
+                <div class="row mt-4 col-sm-11 col-lg-12 d-none ms-0 p-0" id="exemplo">
+                    <label for="exemplo" class="form-label ms-4 p-0">Exemplos (opcional):</label>
+                    <input type="text" id="exemplo" name="exemplo" class="form-control ms-4"
+                        placeholder="Escreva exemplos de atividades oferecidas nesse evento">
+                </div>
+
+                <!-- caixa botoes -->
+                <div class="button mt-5 d-flex justify-content-center gap-5">
+                    <button class="cancelar-button" id="cancelarButton">Cancelar</button>
+                    <button class="add-button" id="addButton">Adicionar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../public/js/frontend.js"></script>
+    <script src="../public/js/novo-evento.js"></script>
+
+</body>
+
+</html>
