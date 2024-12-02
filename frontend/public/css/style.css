@@ -10,34 +10,7 @@ form {
     caret-color: auto;
 }
 
-
-.main-login{
-    background: url(../images/backgrounds/background-arcoiris.svg);
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
-    
-}
-
-.login-container {
-    background-color: white;
-    width: 60rem;
-    height: 30rem;
-}
-
-.login-container div>h1 {
-    color: var(--orange-01);
-    font-weight: 800;
-}
-
-.botao-login {
-    background-color: var(--orange-01);
-    color: white;
-    padding: 7px;
-    border: none;
-}
-
+/*contatos*/
 .botao-enviar {
     background-color: var(--orange-01);
     color: white;
@@ -52,14 +25,6 @@ form {
     background-color: var(--blue-01);
 }
 
-.imagem-fundo {
-    background-image: url("../images/backgrounds/background-01.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: cover;
-    min-height: 100vh;
-}
-
 .background-contatos {
     background-image: url("../images/backgrounds/backgroud_contatos.svg");
     background-repeat: repeat-y;
@@ -67,7 +32,16 @@ form {
     background-size: auto;
     min-height: 90vh;
 }
+/**/
 
+/*eventos, saude e oficinas*/
+.imagem-fundo {
+    background-image: url("../images/backgrounds/background-01.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+}
 
 .caixa {
     background-color: rgba(0, 0, 0, 0.3);
