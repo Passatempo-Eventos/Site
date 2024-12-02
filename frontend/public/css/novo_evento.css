@@ -12,7 +12,7 @@ body {
     background-repeat: repeat-y;
     background-attachment: scroll;
     background-size: auto;
-    min-height: 120vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -49,7 +49,7 @@ body {
 .caixa-branca {
     background-color: white;
     width: 90%;
-    min-height: 95vh;
+    height: 750px;
     margin: 0 auto;
     border-radius: 30px;
 }
@@ -263,10 +263,6 @@ body {
 }
 
 @media (max-width: 991.98px) {
-    .background-adm {
-        min-height: 190vh;
-    }
-
     .sidebar {
         width: 100px;
     }
@@ -281,7 +277,7 @@ body {
     }
 
     .caixa-branca {
-        min-height: 165vh;
+        min-height: 900px;
     }
 
     .screen-content {
@@ -300,9 +296,6 @@ body {
 
 
 @media (max-width: 767.98px) {
-    .background-adm{
-        min-height: 200vh;
-    }
     .sair-button {
         width: 15%;
         position: relative;
@@ -311,9 +304,11 @@ body {
     .foto-perfil-button {
         background-color: var(--blue-01);
     }
+
     .screen-content {
         margin-left: 0px;
     }
+
     .screen-content h1 {
         padding-top: 15%;
     }
