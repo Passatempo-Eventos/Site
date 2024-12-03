@@ -1,0 +1,121 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+main {
+    padding-bottom: 100px ;
+}
+
+.apresentacao-texto {
+    height: 400px;
+    background-color: var(--blue-02);
+}
+
+.apresentacao-texto h1 {
+    font-family: "Luckiest Guy", cursive;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.apresentacao-texto a {
+    padding: 10px 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: var(--orange-01);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.apresentacao-carrosel {
+    height: 400px;
+    background-color: white;
+}
+
+.quemsomos-container {
+    padding: 70px 100px;
+}
+
+.quemsomos-container h1,
+.quemsomos-container p {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.quemsomos-container a {
+    padding: 10px 20px;
+    font-family: "Luckiest Guy", recursive;
+    font-size: 15px;
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.oficinas-container {
+    background-color: var(--orange-01); /* cor do fundp oficinas */
+}
+
+.oficinas-container div>h1,
+.oficinas-container div>p {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+.oficinas-container div>a {
+    padding: 10px 30px;
+    font-family: "Luckiest Guy", recursive;
+    font-size: 15px;
+    background-color: var(--yellow-01);
+    color: var(--orange-01);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.oficinas-container div>img {
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+.saude-container {
+    background-color: var(--yellow-01);
+}
+
+.saude-container div>h1,
+.saude-container div>p {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--orange-01);
+}
+
+.saude-container div>a {
+    padding: 10px 30px;
+    font-family: "Luckiest Guy", recursive;
+    font-size: 15px;
+    background-color: var(--orange-01);
+    color: var(--yellow-01);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.saude-container div>.img-saude {
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+.saude-container div>.elemento-sol{
+    height: 150px;
+    float:right;
+    position: sticky; 
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+    .quemsomos-container {
+        padding: 50px;
+    }
+}
