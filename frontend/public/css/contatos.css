@@ -1,0 +1,90 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.botao-enviar {
+    background-color: var(--orange-01);
+    color: white;
+    border: none;
+    font-family: Ubuntu;
+    font-weight: 400;
+    width: fit-content;
+    padding: 5px 15px;
+}
+
+.botao-enviar:active {
+    background-color: var(--blue-01);
+}
+
+.background-contatos {
+    background-image: url("../images/backgrounds/backgroud_contatos.svg");
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: 90vh;
+}
+
+.altura-minima {
+    height: 35px;
+}
+
+.input-box {
+    background-color: rgba(53, 53, 53, 0.15);
+    color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    width: 95%;
+    padding: 8px;
+    resize: none;
+}
+
+.input-checkbox {
+    cursor: pointer;
+}
+
+.input-box::placeholder {
+    color: rgba(53, 53, 53, 0.5);
+    font-family: Ubuntu;
+    padding: 2%;
+}
+
+.input-box:focus {
+    border: 2px solid var(--orange-01);
+    outline: none;
+}
+
+.mensagem {
+    height: 150px !important;
+
+}
+
+.logo-contatos {
+    max-width: 50%;
+    height: auto;
+}
+
+.titulo-escuro {
+    font-family: Ubuntu;
+    color: var(--gray);
+    font-weight: bold;
+}
+
+.texto-escuro {
+    font-family: Ubuntu;
+    color: var(--gray);
+    font-size: medium;
+}
+
+form.gap-form{
+    gap: 12px;
+}
+
+.caixa-branca {
+    background-color: white;
+    width: 85%;
+    height: 525px;
+    margin: 0 auto;
+    border-radius: 30px;
+}

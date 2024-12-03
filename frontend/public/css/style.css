@@ -10,29 +10,6 @@ form {
     caret-color: auto;
 }
 
-/*contatos*/
-.botao-enviar {
-    background-color: var(--orange-01);
-    color: white;
-    border: none;
-    font-family: Ubuntu;
-    font-weight: 400;
-    width: fit-content;
-    padding: 5px 15px;
-}
-
-.botao-enviar:active {
-    background-color: var(--blue-01);
-}
-
-.background-contatos {
-    background-image: url("../images/backgrounds/backgroud_contatos.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: auto;
-    min-height: 90vh;
-}
-/**/
 
 /*eventos, saude e oficinas*/
 .imagem-fundo {
@@ -45,14 +22,6 @@ form {
 
 .caixa {
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.caixa-branca {
-    background-color: white;
-    width: 85%;
-    height: 525px;
-    margin: 0 auto;
-    border-radius: 30px;
 }
 
 .titulo {
@@ -77,49 +46,8 @@ form {
     height: 100%;
 }
 
-.altura-minima {
-    height: 35px;
-}
-
-.input-box {
-    background-color: rgba(53, 53, 53, 0.15);
-    color: var(--gray);
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    width: 95%;
-    padding: 8px;
-    resize: none;
-}
-
-.input-checkbox {
-    cursor: pointer;
-}
-
-.input-box::placeholder {
-    color: rgba(53, 53, 53, 0.5);
-    font-family: Ubuntu;
-    padding: 2%;
-}
-
-.input-box:focus {
-    border: 2px solid var(--orange-01);
-    outline: none;
-}
-
-.mensagem {
-    height: 150px !important;
-
-}
-
 .resize-img {
     max-width: 85%;
-    height: auto;
-}
-
-.logo-contatos {
-    max-width: 50%;
     height: auto;
 }
 
@@ -128,21 +56,6 @@ form {
     color: white;
 }
 
-.titulo-escuro {
-    font-family: Ubuntu;
-    color: var(--gray);
-    font-weight: bold;
-}
-
-.texto-escuro {
-    font-family: Ubuntu;
-    color: var(--gray);
-    font-size: medium;
-}
-
-form.gap-form{
-    gap: 12px;
-}
 
 
 /* Style Doe_Agora */
