@@ -12,20 +12,63 @@
 
 <body>
 
-    <div class="d-flex">
-        <!-- Side-Menu -->
-        <header id="side-menu" class="d-flex flex-column text-white vh-100 w-auto position-fixed">
-            <div class="d-flex justify-content-center align-items-center p-3">
-                <img src="https://github.com/mdo.png" alt="Avatar do Administrador" width="50" height="50"
-                    class="rounded-circle">
+    <div class="container-fluid background-adm">
+
+        <!-- sidebar -->
+        <div class="sidebar d-none d-md-block ">
+            <div class="adm mt-4">
+                <img src="./public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
+                    id="fotoPerfilSidebar">
             </div>
-            <button id="button-sair" type="button" class="btn btn-primary mt-auto w-100 border-0 rounded-0 rounded-top"
-                data-bs-toggle="modal" data-bs-target="#sairModal">Sair</button>
-        </header>
+
+            <div class="adm-info texto-simples" id="admInfo">
+                <p class="adm-nome" style="font-size:x-large;">Nome do Admin</p>
+                <p class="adm-email">email@exemplo.com</p>
+                <button class="foto-perfil-button" id="fotoButtonSidebar">Alterar Foto</button>
+                <input type="file" class="foto-adm d-none" id="fotoAdmSidebar" name="foto-adm" accept="image/*">
+            </div>
+
+            <div>
+                <button class="sair-button rounded-top" id="sairButton">Sair</button>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  d-block d-md-none fixed-top">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between w-100">
+
+                    <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <div class="adm mt-0">
+                                <img src="./public/images/passatempo_logo.png" alt="Foto de perfil" class="foto-perfil"
+                                    id="fotoPerfilNavbar">
+                            </div>
+                            <input type="file" class="foto-adm d-none" id="fotoAdmNavbar" name="foto-adm"
+                                accept="image/*">
+
+                            <p class="adm-nome mt-2" style="font-size:x-large;">Nome do Admin</p>
+                            <p class="adm-email">email@exemplo.com</p>
+                            <button class="foto-perfil-button" id="fotoButtonNavbar">Alterar Foto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
 
         <!-- Código da main -->
         <main class="d-flex flex-column flex-grow-1 ">
-            <div class="py-3 fundo-cor ">
+            <div class="py-3 fundo-cor a">
                 <div class="alert alert-dark position-fixed start-50 mt-4 translate-middle px-3 px-md-5 z-3"
                     role="alert">Sucesso ao cadastrar</div>
 
@@ -349,6 +392,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./public/js/admin.js"></script>
 </body>
 
 </html>
