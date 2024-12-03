@@ -1,12 +1,11 @@
 @import "./variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 .botao-enviar {
     background-color: var(--orange-01);
     color: white;
     border: none;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     width: fit-content;
     padding: 5px 15px;
@@ -46,7 +45,7 @@
 
 .input-box::placeholder {
     color: rgba(53, 53, 53, 0.5);
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     padding: 2%;
 }
 
@@ -66,13 +65,13 @@
 }
 
 .titulo-escuro {
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     color: var(--gray);
     font-weight: bold;
 }
 
 .texto-escuro {
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     color: var(--gray);
     font-size: medium;
 }
