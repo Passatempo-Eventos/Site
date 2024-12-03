@@ -88,3 +88,23 @@ form.gap-form{
     margin: 0 auto;
     border-radius: 30px;
 }
+
+@media (max-width: 1199.98px) {
+    .caixa-branca {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .background-contatos {
+        height: 45rem;
+        width: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .texto-escuro {
+        font-size: 90%;
+    }
+}
