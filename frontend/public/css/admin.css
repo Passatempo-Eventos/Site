@@ -179,6 +179,7 @@ main {
     display: flex;
     float: right;
     z-index: 10;
+    margin-right: 1.5rem;
 }
 
 .editar-link {
