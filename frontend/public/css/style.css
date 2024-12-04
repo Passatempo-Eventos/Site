@@ -2,242 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-header {
-    background-color: var(--yellow-01);
-    z-index: 10;
-}
-
-.menu-btn {
-    background: none;
-}
-
-.passatempo-logo img {
-    width: 75px;
-}
-
-.nav-links a {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    color: var(--orange-01);
-}
-
-nav .nav-links a:hover,
-.link-border-bottom {
-    border-bottom: 2px solid var(--orange-01);
-}
-
-main .nav-links a > li:hover,
-.link-bg-color {
-    background: var(--black-hover);
-}
-
-.botao-doe {
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 7px 12px;
-    border: 1px solid var(--orange-01);
-    border-radius: 5px;
-    color: var(--orange-01);
-}
-
-.botao-entrar {
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 7px 12px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: var(--orange-01);
-    color: var(--yellow-01);
-}
-
-.overlay {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 94.45px;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 9;
-}
-
-main {
-    background-color: var(--blue-01);
-    margin-top: 94.45px;
-}
-
-.sidebar {
-    background-color: var(--yellow-01);
-    min-width: 250px;
-    max-width: 250px;
-    border-right: 1px solid var(--yellow-02);
-    margin-left: -250px;
-    transition: all .3s;
-    z-index: 10;
-}
-
-.activate {
-    margin-left: 0px;
-}
-
-.sidebar-content {
-    height: 90vh;
-}
-
-.menu-item {
-    padding: 15px;
-    border-bottom: 1px solid var(--yellow-02);
-}
-
-.menu-item.bottom {
-    background: var(--yellow-01);
-    width: 250px;
-    position: absolute;
-    bottom: 0;
-    border-top: 1px solid var(--yellow-02);
-}
-
-body {
-    caret-color: transparent;
-}
-
-form {
-    caret-color: auto;
-}
-
-/* Homepage */
-.apresentacao-texto {
-    height: 400px;
-    background-color: var(--blue-02);
-}
-
-.apresentacao-texto h1 {
-    font-family: "Luckiest Guy", cursive;
-    color: white;
-    margin-bottom: 5rem;
-}
-
-.apresentacao-texto a {
-    padding: 10px 20px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    background-color: var(--orange-01);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.apresentacao-carrosel {
-    height: 400px;
-    background-color: white;
-}
-
-.quemsomos-container {
-    padding: 70px 100px;
-}
-
-.quemsomos-container h1,
-.quemsomos-container p {
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    margin-bottom: 2rem;
-}
-
-.quemsomos-container a {
-    padding: 10px 20px;
-    font-family: "Luckiest Guy", recursive;
-    font-size: 15px;
-    background-color: var(--yellow-01);
-    color: var(--orange-01);
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.oficinas-container {
-    background-color: var(--orange-01);
-}
-
-.oficinas-container div>h1,
-.oficinas-container div>p {
-    font-family: "Ubuntu", sans-serif;
-    color: white;
-}
-
-.oficinas-container div>a {
-    padding: 10px 30px;
-    font-family: "Luckiest Guy", recursive;
-    font-size: 15px;
-    background-color: var(--yellow-01);
-    color: var(--orange-01);
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.oficinas-container div>img {
-    max-height: 400px;
-    border-radius: 5px;
-}
-
-.saude-container {
-    background-color: var(--yellow-01);
-}
-
-.saude-container div>h1,
-.saude-container div>p {
-    font-family: "Ubuntu", sans-serif;
-    color: var(--orange-01);
-}
-
-.saude-container div>a {
-    padding: 10px 30px;
-    font-family: "Luckiest Guy", recursive;
-    font-size: 15px;
-    background-color: var(--orange-01);
-    color: var(--yellow-01);
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.saude-container div>img {
-    max-height: 400px;
-    border-radius: 5px;
-}
-
-.login-container {
-    background-color: white;
-    width: 60rem;
-    height: 30rem;
-}
-
-.login-container div>h1 {
-    color: var(--orange-01);
-    font-weight: 800;
-}
-
-.botao-login {
-    background-color: var(--orange-01);
-    color: white;
-    padding: 7px;
-    border: none;
-}
-
-.botao-enviar {
-    background-color: var(--orange-01);
-    color: white;
-    border: none;
-    font-family: Ubuntu;
-    font-weight: 400;
-    width: fit-content;
-    padding: 5px 15px;
-}
-
-.botao-enviar:active {
-    background-color: var(--blue-01);
-}
-
+/*eventos, saude e oficinas*/
 .imagem-fundo {
     background-image: url("../images/backgrounds/background-01.svg");
     background-repeat: repeat-y;
@@ -246,25 +11,8 @@ form {
     min-height: 100vh;
 }
 
-.background-contatos {
-    background-image: url("../images/backgrounds/backgroud_contatos.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-size: auto;
-    min-height: 90vh;
-}
-
-
 .caixa {
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.caixa-branca {
-    background-color: white;
-    width: 85%;
-    height: 525px;
-    margin: 0 auto;
-    border-radius: 30px;
 }
 
 .titulo {
@@ -289,141 +37,23 @@ form {
     height: 100%;
 }
 
-.altura-minima {
-    height: 35px;
-}
-
-.input-box {
-    background-color: rgba(53, 53, 53, 0.15);
-    color: var(--gray);
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    width: 95%;
-    padding: 8px;
-    resize: none;
-}
-
-.input-checkbox {
-    cursor: pointer;
-}
-
-.input-box::placeholder {
-    color: rgba(53, 53, 53, 0.5);
-    font-family: Ubuntu;
-    padding: 2%;
-}
-
-.input-box:focus {
-    border: 2px solid var(--orange-01);
-    outline: none;
-}
-
-.mensagem {
-    height: 150px !important;
-
-}
-
 .resize-img {
     max-width: 85%;
     height: auto;
 }
 
-.logo-contatos {
-    max-width: 50%;
-    height: auto;
-}
-
 .subtitulo {
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     color: white;
 }
 
-.titulo-escuro {
-    font-family: Ubuntu;
-    color: var(--gray);
-    font-weight: bold;
-}
-
-.texto-escuro {
-    font-family: Ubuntu;
-    color: var(--gray);
-    font-size: medium;
-}
-
-form.gap-form{
-    gap: 12px;
-}
-
-
-/* Style Doe_Agora */
-.background-doe_agora {
-    background-image: url("../images/background-02.svg");
-    background-repeat: repeat-y;
-    background-attachment: scroll; 
-    background-size: cover;
-    min-height: 100vh;
-    padding: 0;
-}
-
-.doe_agora-container {
-    background-color: white;
-    width: 60rem;
-    height: 30rem;
-}
-.doe_agora-container > p{
-    margin: 10px;
-}
-.doe_agora-font{
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 500;
-}
 
 /* Media Queries */
-@media (max-width: 1199.98px) {
-    .login-container {
-        width: 50rem;
-        height: 30rem;
-    }
+@media (max-width: 1199.98px) {}
 
-    .doe_agora-container {
-        width: 50rem;
-        height: 30rem;
-    }
-
-    .caixa-branca {
-        width: 90%;
-        height: auto;
-    }
-}
-
-
-@media (max-width: 991.98px) {
-    .login-container {
-        width: 40rem;
-        height: 30rem;
-    }
-
-    .doe_agora-container {
-        width: 40rem;
-        height: 30rem;
-    }
-
-    .background-contatos {
-        height: 45rem;
-        width: auto;
-    }
-}
-
-
+@media (max-width: 991.98px) {}
 
 @media (max-width: 767.98px) {
-    .login-container {
-        width: 25rem;
-        height: 30rem;
-    }
-
     .quemsomos-container {
         padding: 50px;
     }
@@ -431,14 +61,5 @@ form.gap-form{
     .resize-img {
         max-width: 60%;
         height: auto;
-    }
-
-    .doe_agora-container {
-        width: 25rem;
-        height: 40rem;
-    }
-
-    .texto-escuro {
-        font-size: 90%;
     }
 }

@@ -1,0 +1,100 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+main {
+    background-color: var(--blue-01);
+    margin-top: 94.45px;
+}
+
+header {
+    background-color: var(--yellow-01);
+    z-index: 10;
+}
+
+.menu-btn {
+    background: none;
+}
+
+.passatempo-logo img {
+    width: 75px;
+}
+
+.nav-links a {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: var(--orange-01);
+}
+
+nav .nav-links a:hover,
+.link-border-bottom {
+    border-bottom: 2px solid var(--orange-01);
+}
+
+main .nav-links a > li:hover,
+.link-bg-color {
+    background: var(--black-hover);
+}
+
+.botao-doe {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--orange-01);
+    border-radius: 5px;
+    color: var(--orange-01);
+}
+
+.botao-entrar {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--orange-01);
+    color: var(--yellow-01);
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 94.45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9;
+}
+
+.sidebar {
+    background-color: var(--yellow-01);
+    min-width: 250px;
+    max-width: 250px;
+    border-right: 1px solid var(--yellow-02);
+    margin-left: -250px;
+    transition: all .3s;
+    z-index: 10;
+}
+
+.activate {
+    margin-left: 0px;
+}
+
+.sidebar-content {
+    height: 90vh;
+}
+
+.menu-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--yellow-02);
+}
+
+.menu-item.bottom {
+    background: var(--yellow-01);
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid var(--yellow-02);
+}
