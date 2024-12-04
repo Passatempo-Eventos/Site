@@ -1,6 +1,14 @@
 const protocolo = "http://"
 const baseURL = "localhost:3000"
 
+const verificarPagina = () => {
+    const token = localStorage.getItem("token")
+
+    if (token) {
+        window.location.replace("./admin.html")
+    }
+}
+
 const fazerLogin = async (event) => {
     event.preventDefault() // Evita que o form recarregue a página
 
