@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt")
+const jwt = require("jsonwebtoken")
 const Usuario = require("../models/Usuario.js")
 
 // Função para criar um usuário
@@ -18,8 +19,8 @@ exports.criar = async (req, res) => {
     }
 }
 
-// Função para verificar se o usuário existe
-exports.verificar = async (req, res) => {
+// Função para autenticar/verificar se o usuário existe
+exports.autenticar = async (req, res) => {
     try {
         const email = req.body.email
         const senha = req.body.senha
@@ -35,7 +36,13 @@ exports.verificar = async (req, res) => {
         if (!senhaValida) {
             res.status(401).json({msg: "Senha inválida!"})
         }
-        res.status(200).end()
+        // Caso a senha estiver correta é gerado um token
+        const token = jwt.sign(
+            {login: email},
+            "temp-key",
+            {expiresIn: "10m"}
+        )
+        res.status(200).json({ token: token })
     } catch(e) {
         console.log(e)
     }
