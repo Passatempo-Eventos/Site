@@ -7,6 +7,7 @@ const usuarioRoutes = require("./routes/usuarioRoutes.js")
 const eventosRoutes = require("./routes/eventosRoutes.js")
 const oficinasRoutes = require("./routes/oficinasRoutes.js")
 const saudeRoutes = require("./routes/saudeRoutes.js")
+const adminRoutes = require("./routes/adminRoutes.js")
 
 const PORT = process.env.PORT || 3000
 
@@ -24,6 +25,7 @@ app.use("/", usuarioRoutes)
 app.use("/", eventosRoutes)
 app.use("/", oficinasRoutes)
 app.use("/", saudeRoutes)
+app.use("/", adminRoutes)
 
 // Função para criar conexão com o banco de dados (MongoDB)
 async function conectarMongo() {
