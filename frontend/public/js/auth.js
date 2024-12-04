@@ -1,7 +1,9 @@
 const protocolo = "http://"
 const baseURL = "localhost:3000"
 
-const fazerLogin = async () => {
+const fazerLogin = async (event) => {
+    event.preventDefault() // Evita que o form recarregue a página
+
     let emailLoginInput = document.querySelector("#emailLoginInput")
     let senhaLoginInput = document.querySelector("#senhaLoginInput")
     let emailLogin = emailLoginInput.value
@@ -12,16 +14,21 @@ const fazerLogin = async () => {
             const loginEndpoint = "/login"
             const urlCompleta = `${protocolo}${baseURL}${loginEndpoint}`
             const response = await axios.post(urlCompleta, { email: emailLogin, senha: senhaLogin })
-            const token = response.data
-            localStorage.setItem("token", token)
+            const token = response.data.token
+            localStorage.setItem("token", token) // Salva o token no local storage 
             emailLoginInput.value = ""
             senhaLoginInput.value = ""
-            window.location.replace("../../views/saude.html") // teste para mudar página após o login
-        } catch(e) {
-           console.log(e) 
+            window.location.replace("./admin.html") // Redireciona para a página de administração
+        } catch (e) {
+            console.log(e.message)
+            if (e.response) {
+                console.log(e.response.data)
+            }
         }
     }
     else {
         console.log("Por favor, preencha todos os campos!")
     }
 }
+
+document.querySelector("form").addEventListener("submit", fazerLogin)
