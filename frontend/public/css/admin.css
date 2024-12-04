@@ -1,0 +1,273 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+body {
+    caret-color: transparent;
+}
+
+.background-adm {
+    background-color: var(--gray-02);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: var(--blue-02);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+
+}
+
+.navbar {
+    background-color: var(--blue-02);
+    color: rgb(0, 0, 0);
+
+}
+
+
+.navbar-toggler {
+    border: 2px solid var(--orange-02);
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 30 30"><path stroke="%23DC660A" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+
+}
+
+.adm {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.adm img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--blue-01);
+}
+
+.sair-button {
+    background-color: var(--orange-02);
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.sair-button:hover {
+    color: var(--yellow-01)
+}
+
+.adm-info {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 110%;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 3px solid var(--blue-02);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.adm-info p {
+    margin-top: 15px;
+}
+
+.foto-perfil-button {
+    background-color: var(--blue-02);
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.foto-perfil-button:hover {
+    color: var(--yellow-01)
+}
+
+.foto-perfil {
+    cursor: pointer;
+}
+
+#side-menu { /* Cor do menu lateral  */
+    background-color: var(--blue-admin-01) ;
+}
+
+.fundo-cor {  
+    background-color: var(--cinza-admin-01) ;
+}
+
+h2,h3 { /* Configuração das fontes h2 e h3 */
+    font-family: "Luckiest Guy", recursive;
+}
+
+h3 { /* Definindo a cor do h3 */
+    color: var(--orange-01) ;
+}
+
+h4 { 
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    padding-left: 1.6rem;
+    font-weight: bold;
+}
+
+p { 
+    font-family: "Ubuntu", sans-serif;
+}
+
+main { 
+    margin-left: 150px;
+}
+
+#button-sair {
+    background-color: var(--orange-01);
+    z-index: 10;
+}
+
+.container-tabela {
+    margin: 100px 0 50px 0;
+}
+
+.container-tabela ~ .container-tabela {
+    margin: 50px 0 50px 0;
+}
+
+.tabelas {
+    margin: 0 10px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+#criar-evento-button {
+    font-family: "Luckiest Guy", recursive;
+    color: var(--branco-button-01);
+    background-color: var(--blue-01);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    float: right;
+    z-index: 10;
+    margin-right: 1.5rem;
+}
+
+.editar-link {
+    color: var(--editar-link);
+}
+
+.excluir-link {
+    color: var(--excluir-link);
+}
+
+.tabelas {
+    margin: 1.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.table {
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+    /* Arredonda as bordas superiores do cabeçalho da tabela */
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Centraliza as imagens dentro das células */
+.table td img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+/* Configurações do cabeçalho da tabela */
+.table th{
+    position: sticky;
+    top: 0 ;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Centraliza todo o conteúdo nas células */
+.table td, .table th {
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .adm img {
+        width: 70px;
+        height: 70px;
+    }
+
+    main {
+        margin-left: 100px;
+    }
+
+    h3 {
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sair-button {
+        width: 15%;
+        position: relative;
+    }
+
+    .foto-perfil-button {
+        background-color: var(--blue-01);
+    }
+
+    main {
+        margin-left: 0px;
+    }
+
+    h3{
+        margin-top: 10%;
+    }
+}
