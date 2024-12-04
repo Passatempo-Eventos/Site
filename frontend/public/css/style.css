@@ -47,6 +47,9 @@
     color: white;
 }
 
+.evento:nth-child(odd) .imagem {
+    order: 1;
+}
 
 /* Media Queries */
 @media (max-width: 1199.98px) {}
@@ -61,5 +64,10 @@
     .resize-img {
         max-width: 60%;
         height: auto;
+    }
+
+
+    .evento:nth-child(odd) .imagem {
+        order: 0;
     }
 }

@@ -72,15 +72,15 @@
 
                     <!-- primeiro evento -->
                     <% eventosSociais.forEach(event => { %> <!-- Loop pelos eventos sociais -->
-                    <div class="d-flex flex-md-row flex-column mb-5">
+                    <div class="evento d-flex flex-md-row flex-column mb-5">
                         <div
-                            class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                            class="imagem col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
                                 <img src="<%= event.imagem %>" class="img-fluid resize-img"
                                 alt="">
                         </div>
 
                         <div class="col-12 col-md-7 justify-content-center align-items-center">
-                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5 ms-md-0">
+                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5">
                                 <h2 class="subtitulo"><%= event.titulo %></h2>
                                     <p class=" texto-padrao mt-3 mb-0 me-lg-4"><%= event.descricao %></p>
                             </div>
@@ -94,15 +94,15 @@
                     <h1 class="titulo mt-4 mb-4 mb-4 ps-5">Corporativos</h1>
                     <!-- primeiro evento -->
                     <% eventosCorporativos.forEach(event => { %> <!-- Loop pelos eventos corporativos -->
-                    <div class="d-flex flex-md-row flex-column mb-5">
+                    <div class="evento d-flex flex-md-row flex-column mb-5">
                         <div
-                            class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                            class="imagem col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
                                 <img src="<%= event.imagem %>" class="img-fluid resize-img"
                                 alt="">
                         </div>
 
                         <div class="col-12 col-md-7 justify-content-center align-items-center">
-                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5 ms-md-0">
+                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5">
                                 <h2 class="subtitulo"><%= event.titulo %></h2>
                                     <p class=" texto-padrao mt-3 mb-0 me-lg-4"><%= event.descricao %></p>
                             </div>

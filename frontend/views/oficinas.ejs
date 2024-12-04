@@ -70,14 +70,14 @@
                 <div class="col-12 g-0 row py-1 mb-5 mt-3 caixa">
                     <!-- primeiro evento -->
                     <% oficinas.forEach(event => { %> <!-- Loop pelas oficinas -->
-                    <div class="d-flex flex-md-row flex-column my-4">
-                        <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="evento d-flex flex-md-row flex-column my-4">
+                        <div class="imagem col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
                             <img src="<%= event.imagem %>" class="img-fluid resize-img"
                                 alt="">
                         </div>
 
                         <div class="col-12 col-md-7 justify-content-center align-items-center">
-                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5 ms-md-0">
+                            <div class="content-wrapper mt-md-0 mt-3 ms-5 me-5">
                                 <h2 class="subtitulo"><%= event.titulo %></h2>
                                     <p class=" texto-padrao mt-3 me-lg-4 mb-5"><%= event.descricao %></p>
                             </div>
