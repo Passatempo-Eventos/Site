@@ -5,7 +5,7 @@ const verificarPagina = () => {
     const token = localStorage.getItem("token")
 
     if (token) {
-        window.location.replace("./admin.html")
+        window.location.replace("http://localhost:3000/admin")
     }
 }
 
@@ -26,7 +26,7 @@ const fazerLogin = async (event) => {
             localStorage.setItem("token", token) // Salva o token no local storage 
             emailLoginInput.value = ""
             senhaLoginInput.value = ""
-            window.location.replace("./admin.html") // Redireciona para a página de administração
+            window.location.replace("http://localhost:3000/admin") // Redireciona para a página de administração
         } catch (e) {
             console.log(e.message)
             if (e.response) {
@@ -39,4 +39,10 @@ const fazerLogin = async (event) => {
     }
 }
 
-document.querySelector("form").addEventListener("submit", fazerLogin)
+const fazerLogout = async () => {
+    localStorage.removeItem("token")
+    window.location.replace("../index.html")
+}
+
+
+document.getElementById("login-form").addEventListener("submit", fazerLogin)

@@ -1,3 +1,5 @@
+const protocolo = "http://"
+const baseURL = "localhost:3000"
 
 //preview img evento
 const imageInput = document.getElementById('imagem');
@@ -92,19 +94,6 @@ fotoInputNavbar.addEventListener('change', function (event) {
     }
 });
 
-
-//sair
-const sairButton = document.getElementById('sairButton');
-sairButton.addEventListener('click', function () {
-    window.location.href = 'http://127.0.0.1:5500/Site/frontend/index.html'
-});
-
-//cancelar
-const cancelarButton = document.getElementById('cancelarButton');
-cancelarButton.addEventListener('click', function () {
-    window.location.href = '' //redirecionar para página principal do adm
-});
-
 //adicionar
 const addButton = document.getElementById('addButton');
 addButton.addEventListener('click', function () {
@@ -124,18 +113,25 @@ async function addEvento() {
     let imgDescricao = imgDescricaoInput.value;
     let descricao = descricaoInput.value;
 
-    if (tipo && titulo && img && imgDescricao && descricao) {
+    if (tipo && titulo && descricao) {
         try {
-            const addEndpoint = '/add-evento';
-            const URLcompleta = `${protocolo}${baseURL}${addEndpoint}`;
-
-            await axios.post(URLcompleta, {
-                tipo,
-                titulo,
-                img,
-                imgDescricao,
-                descricao,
-            });
+            const eventosEndpoint = "/eventos"
+            const oficinasEndpoint = "/oficinas"
+            const saudeEndpoint = "/saude"
+            if (tipo === "Evento Social") {
+                const urlCompleta = `${protocolo}${baseURL}${eventosEndpoint}`
+                await axios.post(urlCompleta, { tipo: "social", titulo, descricao, imagem: "https://plus.unsplash.com/premium_photo-1732569119693-05321f406646?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3M3x8fGVufDB8fHx8fA%3D%3D" })
+            }
+            //const addEndpoint = '/add-evento';
+            //const URLcompleta = `${protocolo}${baseURL}${addEndpoint}`;
+            //
+            //await axios.post(URLcompleta, {
+            //    tipo,
+            //    titulo,
+            //    img,
+            //    imgDescricao,
+            //    descricao,
+            //});
 
             tipoInput.value = '';
             tituloInput.value = '';

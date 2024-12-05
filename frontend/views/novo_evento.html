@@ -28,7 +28,7 @@
             </div>
 
             <div>
-                <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                <button onclick="fazerLogout()" type="button" class="sair-button rounded-top" id="sairButton">Sair</button>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between w-100">
 
-                    <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                    <button onclick="fazerLogout()" class="sair-button rounded-top" id="sairButton">Sair</button>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
 
             <!-- modal -->
             <div class="d-flex align-items-center justify-content-center">
-                <div class="alert fade d-none alert-modal-add" role="alert"></div>
+                <div id="alertModal" class="alert fade d-none alert-modal-add" role="alert"></div>
             </div>
 
 
@@ -100,14 +100,9 @@
                 <!-- segunda row: img e descrição-img-->
                 <div class="row mt-4">
 
-                    <div class="col-sm-11 col-lg-3 ms-3 me-4">
-                        <label for="image-input" class="form-label">Imagem:</label>
-                        <input type="file" class="form-control d-none" id="imagem" name="imagem" accept="image/*"
-                            required>
-                        <div class="image-preview ms-2" id="imgPreview">
-                            <div class="icon">+</div>
-                            <img id="preview" alt="Pré-visualização da imagem">
-                        </div>
+                    <div class="col-lg-3 col-sm-11 mt-3 mx-0 me-lg-5">
+                        <label for="imagem-url" class="form-label ms-4">URL da imagem:</label>
+                        <input type="url" class="form-control ms-4" id="imagem-url" name="imagem" placeholder="URL da imagem" required>
                     </div>
 
                     <div class="col-sm-11 col-lg-8 mt-sm-3">
@@ -127,14 +122,14 @@
                 <!-- quarta row: exemplos (só p/ opcão saude e bem-estar) -->
                 <div class="row mt-4 col-sm-11 col-lg-12 d-none ms-0 p-0" id="exemplo">
                     <label for="exemplo" class="form-label ms-4 p-0">Exemplos (opcional):</label>
-                    <input type="text" id="exemplo" name="exemplo" class="form-control ms-4"
+                    <input type="text" id="exemplo-input" name="exemplo" class="form-control ms-4"
                         placeholder="Escreva exemplos de atividades oferecidas nesse evento">
                 </div>
 
                 <!-- caixa botoes -->
                 <div class="button mt-5 d-flex justify-content-center gap-5">
-                    <button class="cancelar-button" id="cancelarButton">Cancelar</button>
-                    <button class="add-button" id="addButton">Adicionar</button>
+                    <a href="http://localhost:3000/admin" class="cancelar-button text-decoration-none" id="cancelarButton">Cancelar</a>
+                    <button onclick="criarEvento()" class="add-button" id="addButton">Adicionar</button>
                 </div>
 
             </div>
@@ -145,9 +140,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.8/dist/axios.min.js"></script>
+    <script src="../public/js/administrador.js"></script>
     <script src="../public/js/frontend.js"></script>
-    <script src="../public/js/novo-evento.js"></script>
-
+    <script src="../public/js/auth.js"></script>
 </body>
 
 </html>

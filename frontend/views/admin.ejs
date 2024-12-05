@@ -29,7 +29,7 @@
             </div>
 
             <div>
-                <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                <button onclick="fazerLogout()" class="sair-button rounded-top" id="sairButton">Sair</button>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between w-100">
 
-                    <button class="sair-button rounded-top" id="sairButton">Sair</button>
+                    <button onclick="fazerLogout()" class="sair-button rounded-top" id="sairButton">Sair</button>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -74,8 +74,8 @@
 
                 <h3 class="pb-0 p-4">Área do Administrador</h3>
                 <p class="ps-4">Aqui você pode adicionar eventos, editá-los ou excluí-los.</p>
-                <button type="button" class="btn btn-success mb-2" id="criar-evento-button">Criar novo
-                    evento</button>
+                <a href="./views/novo_evento.html" class="btn btn-success mb-2" id="criar-evento-button">Criar novo
+                    evento</a>
 
                 <!-- Eventos Sociais -->
                 <div class="container-tabela">
@@ -193,7 +193,7 @@
                                     <td><%= event.titulo %></td>
                                     <td><%= event.descricao %></td>
                                     <td><a href="#" class="editar-link" data-bs-toggle="modal"
-                                            data-bs-target="#editarModal">Editar</a></td>
+                                            data-bs-target="#editarSaudeModal">Editar</a></td>
                                     <td><a href="#" class="excluir-link" data-bs-toggle="modal"
                                             data-bs-target="#deletarModal">Excluir</a></td>
                                 </tr>
@@ -346,6 +346,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="./public/js/admin.js"></script>
+    <script src="./public/js/auth.js"></script>
 </body>
 
 </html>
