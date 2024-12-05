@@ -2,8 +2,8 @@
 Passatempo Eventos é um site desenvolvido por alunos do 1º ano do Instituto Mauá de Tecnologia (IMT) em parceria com a ONG Passatempo Educativo, que tem o objetivo de divulgar os  seus eventos e serviços oferecidos.
 
 ## Integrantes
-| Nome                | R.A.       | Tarefa desempenhada | Github |
-| ------------------- | ---------- | ------------------- | ------ |
+| Nome                | R.A.       | Tarefa desempenhada |
+| ------------------- | ---------- | ------------------- |
 | [Beatriz Diziró de Sant'Anna](https://github.com/BeatrizzzD) | 24.01818-0 | Front-End/Documentação/Prototipação |
 | [Giovanna Albuquerque](https://github.com/gioalbuquerque) | 24.01460-5 | Documentação/Prototipação |
 | [Guilherme Almeida Amorim da Silva](https://github.com/GuilhermeAlmeida2) | 24.00931-8 | Front-End/Back-End |
