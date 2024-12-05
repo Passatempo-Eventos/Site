@@ -9,7 +9,7 @@ const oficinasRoutes = require("./routes/oficinasRoutes.js")
 const saudeRoutes = require("./routes/saudeRoutes.js")
 const adminRoutes = require("./routes/adminRoutes.js")
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000 // no momento funcionando apenas com a porta 3000
 
 const app = express()
 
@@ -29,9 +29,8 @@ app.use("/", adminRoutes)
 
 // Função para criar conexão com o banco de dados (MongoDB)
 async function conectarMongo() {
-    const dbUsuario = process.env.DB_USUARIO
-    const dbSenha = process.env.DB_SENHA
-    await mongoose.connect(`mongodb+srv://${dbUsuario}:${dbSenha}@cluster0.tmbsu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
+    const stringConexao = process.env.DB_CONEXAO
+    await mongoose.connect(stringConexao)
 }
 
 app.listen(PORT, () => {
