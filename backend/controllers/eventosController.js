@@ -12,18 +12,18 @@ exports.mostrar = async (req, res) => {
 }
 
 exports.criar = async (req,res) => {
-    const { tipo, titulo, descricao, imagem } = req.body
-    const novoEvento = new Evento({ tipo, titulo, descricao, imagem })
+    const { tipo, titulo, descricao, imagem, descImagem } = req.body
+    const novoEvento = new Evento({ tipo, titulo, descricao, imagem, descImagem })
     await novoEvento.save()
     res.status(200).json({ msg: "Evento criado com sucesso!"})
 }
 
 exports.atualizar = async (req, res) => {
     const id = req.params.id
-    const { tipo, titulo, descricao, imagem } = req.body
+    const { tipo, titulo, descricao, imagem, descImagem } = req.body
     try {
         const filtro = { _id: id }
-        const atualizar = { $set: { tipo, titulo, descricao, imagem }}
+        const atualizar = { $set: { tipo, titulo, descricao, imagem, descImagem }}
         const resultado = await Evento.updateOne(filtro, atualizar)
         res.status(200).json({ msg: "Evento atualizado com sucesso!" })
     } catch(e) {

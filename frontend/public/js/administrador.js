@@ -6,13 +6,13 @@ const criarEvento = async () => {
     let tipoInput = document.querySelector('#tipo')
     let tituloInput = document.querySelector('#titulo')
     let imgUrlInput = document.querySelector('#imagem-url')
-    let imgDescricaoInput = document.querySelector('#descricao-img')
+    let descImagemInput = document.querySelector('#descricao-img')
     let descricaoInput = document.querySelector('#descricao')
     let exemploInput = document.querySelector('#exemplo-input')
     let tipo = tipoInput.value
     let titulo = tituloInput.value
     let imagemUrl = imgUrlInput.value
-    let imgDescricao = imgDescricaoInput.value
+    let descImagem = descImagemInput.value
     let descricao = descricaoInput.value
     let exemplo = exemploInput.value
 
@@ -23,27 +23,26 @@ const criarEvento = async () => {
             const saudeEndpoint = "/saude"
             if (tipo == 1) {
                 const urlCompleta = `${protocolo}${baseURL}${eventosEndpoint}`
-                const response = await axios.post(urlCompleta, { tipo: "social", titulo: titulo, descricao: descricao, imagem: imagemUrl })
+                const response = await axios.post(urlCompleta, { tipo: "social", titulo: titulo, descricao: descricao, imagem: imagemUrl, descImagem: descImagem  })
             }
             if (tipo == 2) {
                 const urlCompleta = `${protocolo}${baseURL}${eventosEndpoint}`
-                const response = await axios.post(urlCompleta, { tipo: "corporativo", titulo: titulo, descricao: descricao, imagem: imagemUrl })
+                const response = await axios.post(urlCompleta, { tipo: "corporativo", titulo: titulo, descricao: descricao, imagem: imagemUrl, descImagem: descImagem })
             }
             if (tipo == 3) {
                 const urlCompleta = `${protocolo}${baseURL}${oficinasEndpoint}`
-                const response = await axios.post(urlCompleta, { titulo: titulo, descricao: descricao, imagem: imagemUrl })
+                const response = await axios.post(urlCompleta, { titulo: titulo, descricao: descricao, imagem: imagemUrl, descImagem: descImagem })
             }
             if (tipo == 4) {
                 const urlCompleta = `${protocolo}${baseURL}${saudeEndpoint}`
-                console.log(exemplo)
-                const response = await axios.post(urlCompleta, { titulo: titulo, descricao: descricao, exemplo: exemplo, imagem: imagemUrl })
+                const response = await axios.post(urlCompleta, { titulo: titulo, descricao: descricao, exemplo: exemplo, imagem: imagemUrl, descImagem: descImagem })
             }
 
 
             tipoInput.value = ''
             tituloInput.value = ''
             imgUrlInput.value = ''
-            imgDescricaoInput.value = ''
+            descImagemInput.value = ''
             descricaoInput.value = ''
             exemploInput.value = ''
 

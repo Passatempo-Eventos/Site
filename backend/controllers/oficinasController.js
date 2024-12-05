@@ -11,18 +11,18 @@ exports.mostrar = async (req, res) => {
 }
 
 exports.criar = async (req,res) => {
-    const { titulo, descricao, imagem } = req.body
-    const novaOficina = new Oficina({ titulo, descricao, imagem })
+    const { titulo, descricao, imagem, descImagem } = req.body
+    const novaOficina = new Oficina({ titulo, descricao, imagem, descImagem })
     await novaOficina.save()
     res.status(200).json({ msg: "Oficina criada com sucesso!"})
 }
 
 exports.atualizar = async (req, res) => {
     const id = req.params.id
-    const { titulo, descricao, imagem } = req.body
+    const { titulo, descricao, imagem, descImagem } = req.body
     try {
         const filtro = { _id: id }
-        const atualizar = { $set: { titulo, descricao, imagem }}
+        const atualizar = { $set: { titulo, descricao, imagem, descImagem }}
         const resultado = await Oficina.updateOne(filtro, atualizar)
         res.status(200).json({ msg: "Oficina atualizada com sucesso!" })
     } catch(e) {
